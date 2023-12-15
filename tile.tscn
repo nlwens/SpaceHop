@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://870qupft0mqa"]
+
+[ext_resource type="Texture2D" uid="uid://d1hxsli31iau3" path="res://P.I.G/oumuamua.png" id="1_crtne"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k7r21"]
+size = Vector2(207, 18)
+
+[node name="tile" type="StaticBody2D" groups=["paddles"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-6, -3)
+scale = Vector2(5.5, 6.80769)
+texture = ExtResource("1_crtne")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -9)
+shape = SubResource("RectangleShape2D_k7r21")

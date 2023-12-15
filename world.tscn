@@ -1,0 +1,100 @@
+[gd_scene load_steps=9 format=3 uid="uid://xg605m843gih"]
+
+[ext_resource type="PackedScene" uid="uid://dxnhmxms0na4b" path="res://player.tscn" id="1_78p7k"]
+[ext_resource type="Script" path="res://Scripts/world.gd" id="1_oqe1j"]
+[ext_resource type="PackedScene" uid="uid://870qupft0mqa" path="res://tile.tscn" id="2_lij5i"]
+[ext_resource type="Texture2D" uid="uid://deer176b0pr31" path="res://P.I.G/Background.png" id="3_yw41x"]
+[ext_resource type="PackedScene" uid="uid://kbescxxb5e0q" path="res://tile2.tscn" id="4_46774"]
+
+[sub_resource type="GDScript" id="GDScript_f3286"]
+script/source = "extends Camera2D
+
+@export_node_path(\"RigidBody2D\") var player_path
+var player
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	player = get_node(player_path)
+	set_process(true)
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	var player_y = player.get_position().y
+	
+	if  player_y < get_position().y:
+		set_position(Vector2(0,player_y))
+	pass
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2325e"]
+size = Vector2(720, 111)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rrwmj"]
+size = Vector2(109, 1389)
+
+[node name="world" type="Node2D"]
+script = ExtResource("1_oqe1j")
+metadata/_edit_horizontal_guides_ = [-641.0]
+metadata/_edit_vertical_guides_ = [-359.0]
+
+[node name="player" parent="." instance=ExtResource("1_78p7k")]
+position = Vector2(0, 381)
+camera_path = NodePath("../Camera2D")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = SubResource("GDScript_f3286")
+player_path = NodePath("../player")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Camera2D" groups=["deadzone"]]
+position = Vector2(0, 46)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D"]
+position = Vector2(-1, 651)
+shape = SubResource("RectangleShape2D_2325e")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Camera2D" groups=["deadzone"]]
+position = Vector2(0, 46)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D2"]
+position = Vector2(-418, 12.5)
+shape = SubResource("RectangleShape2D_rrwmj")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Camera2D" groups=["deadzone"]]
+position = Vector2(834, 42)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D3"]
+position = Vector2(-418, 12.5)
+shape = SubResource("RectangleShape2D_rrwmj")
+
+[node name="tile" parent="." instance=ExtResource("2_lij5i")]
+position = Vector2(3, 549)
+
+[node name="tile2" parent="tile" instance=ExtResource("4_46774")]
+position = Vector2(-229, -531)
+
+[node name="tile3" parent="tile" instance=ExtResource("2_lij5i")]
+position = Vector2(-226, -134)
+
+[node name="tile4" parent="tile" instance=ExtResource("2_lij5i")]
+position = Vector2(149, -417)
+
+[node name="tile6" parent="tile" instance=ExtResource("4_46774")]
+position = Vector2(-72, -308)
+
+[node name="tile5" parent="tile" instance=ExtResource("2_lij5i")]
+position = Vector2(190, -234)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(1000, 2000)
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer"]
+offset_left = -549.0
+offset_top = -1125.0
+offset_right = 576.0
+offset_bottom = 875.0
+texture = ExtResource("3_yw41x")
+stretch_mode = 1
