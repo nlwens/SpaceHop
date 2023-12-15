@@ -35,6 +35,7 @@ size = Vector2(720, 111)
 size = Vector2(109, 1389)
 
 [node name="world" type="Node2D"]
+position = Vector2(359, 644)
 script = ExtResource("1_oqe1j")
 metadata/_edit_horizontal_guides_ = [-641.0]
 metadata/_edit_vertical_guides_ = [-359.0]
@@ -89,6 +90,7 @@ position = Vector2(190, -234)
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(421, 869)
 motion_mirroring = Vector2(1000, 2000)
 
 [node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer"]
