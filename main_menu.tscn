@@ -59,7 +59,7 @@ theme_override_constants/outline_size = 4
 theme_override_constants/shadow_outline_size = 8
 theme_override_constants/line_spacing = 8
 theme_override_font_sizes/font_size = 60
-text = "Space Hopi"
+text = "Space test"
 horizontal_alignment = 1
 vertical_alignment = 1
 
