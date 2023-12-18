@@ -167,3 +167,5 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_vydvl")
 text = "Purchase"
 icon_alignment = 1
 script = ExtResource("5_qssjh")
+
+[connection signal="pressed" from="Exit" to="Exit" method="_on_pressed"]
