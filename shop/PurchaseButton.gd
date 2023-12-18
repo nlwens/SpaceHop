@@ -1,7 +1,7 @@
 extends Button
 
 # Reference to the main character
-#var character : Node2D = preload("res://MainChar/main_char.tscn")
+#var character : Sprite2D = preload("res://MainChar.png")
 
 # Gold cost for the new image
 var purchaseCost : int = 300

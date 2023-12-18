@@ -1,3 +1,4 @@
+TextureRect
 Control
 Button
 Label
@@ -7,6 +8,5 @@ MarginContainer
 PanelContainer
 CenterContainer
 CanvasLayer
-TextureRect
 Node
 HBoxContainer

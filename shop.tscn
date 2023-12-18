@@ -155,8 +155,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_vydvl")
 text = "Purchase"
 icon_alignment = 1
 script = ExtResource("5_qssjh")
-theme_override_font_sizes/font_size = 27
-theme_override_styles/normal = SubResource("StyleBoxFlat_vydvl")
 
 [node name="Purchase2" type="Button" parent="."]
 layout_mode = 0
@@ -169,5 +167,3 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_vydvl")
 text = "Purchase"
 icon_alignment = 1
 script = ExtResource("5_qssjh")
-theme_override_font_sizes/font_size = 27
-theme_override_styles/normal = SubResource("StyleBoxFlat_vydvl")
