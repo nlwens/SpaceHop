@@ -1,3 +1,9 @@
 res://main_menu.tscn
 res://bg.gdshader
+res://Scripts/player.gd
 res://world.tscn
+res://Scripts/world.gd
+res://player.tscn
+res://CanvasLayer.gd
+res://shop/ExitButton.gd
+res://shop/PurchaseButton.gd

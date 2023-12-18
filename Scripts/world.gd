@@ -17,7 +17,6 @@ func _ready():
 		add_child(new_tile)
 		add_child(new_tile2)
 		y -= randf_range(100,250)
-	
 	pass # Replace with function body.
 
 
