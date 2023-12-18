@@ -1,55 +1,55 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1702661811
-background.jpg::CompressedTexture2D::5264390165839659738::1702646710::1702646710::1::::<><>::
-CanvasLayer.gd::GDScript::-1::1702646874::0::1::::<>CanvasLayer<>::
-game_scene.tscn::PackedScene::-1::1702646710::0::1::::<><>::
-icon.svg::CompressedTexture2D::952823857060801387::1701890578::1702646533::1::::<><>::
-IMG_7365.JPG::CompressedTexture2D::5796956839322774591::1702643466::1702643466::1::::<><>::
-MainChar.png::CompressedTexture2D::6072889425123914673::1702643466::1702643466::1::::<><>::
-main_menu.tscn::PackedScene::285133182844743066::1702661811::0::1::::<><>::uid://chad0b35pilne::::res://background.jpg<>res://CanvasLayer.gd<>uid://xg605m843gih::::res://world.tscn<>res://shop.tscn
-player.tscn::PackedScene::8800890041459513363::1702661773::0::1::::<><>::uid://c72n4p4pkf66a::::res://P.I.G/pixil-frame-0.png<>res://Scripts/player.gd<>uid://d2hmgdlggejkx::::res://SoundEffects/Jump.wav<>uid://cxohlcimog4xn::::res://SoundEffects/Fail.wav
-s.1.PNG::CompressedTexture2D::5940330567359602478::1702643466::1702643466::1::::<><>::
-s.2.PNG::CompressedTexture2D::191738737857955288::1702643465::1702643466::1::::<><>::
-shop.tscn::PackedScene::-1::1702645516::0::1::::<><>::
-tile2.tscn::PackedScene::704227968020475154::1702421354::0::1::::<><>::uid://bnn2er7h21oew::::res://P.I.G/tiles.png
-tile.tscn::PackedScene::2383839499599255080::1702472802::0::1::::<><>::uid://d1hxsli31iau3::::res://P.I.G/oumuamua.png
-world.tscn::PackedScene::1628658137599874047::1702661811::0::1::::<><>::uid://dxnhmxms0na4b::::res://player.tscn<>res://Scripts/world.gd<>uid://870qupft0mqa::::res://tile.tscn<>uid://deer176b0pr31::::res://P.I.G/Background.png<>uid://kbescxxb5e0q::::res://tile2.tscn
-::res://MainChar/::1702647026
-main_char.gd::GDScript::-1::1702643468::0::1::::<>Node2D<>::
-main_char.tscn::PackedScene::8443256266823147346::1702643468::0::1::::<><>::res://MainChar/main_char.gd
-::res://P.I.G/::1702647026
-Background.png::CompressedTexture2D::7449355284881824510::1701884880::1702646534::1::::<><>::
-oumuamua.png::CompressedTexture2D::9000051856493019044::1702219516::1702646533::1::::<><>::
-pixil-frame-0.png::CompressedTexture2D::7075464505436766722::1701871996::1702646533::1::::<><>::
-tiles.png::CompressedTexture2D::3327360006456474294::1702219538::1702646533::1::::<><>::
-屏幕截图 2023-12-06 151724.png::CompressedTexture2D::8505129255282937439::1701872258::1702646533::1::::<><>::
-::res://P.I.G/no use/::1702647026
-8fe869f1c3128ccc39a17c286fa5c1f8.jpg::CompressedTexture2D::1844275027997369396::1701712506::1702646534::1::::<><>::
-20180222200227_mHj4V.jpeg::CompressedTexture2D::4261286086200214246::1701712378::1702646534::1::::<><>::
-屏幕截图 2023-12-04 190231.jpg::CompressedTexture2D::3943749578677435957::1701712984::1702646533::1::::<><>::
-屏幕截图 2023-12-04 190407.jpg::CompressedTexture2D::3371067136497811486::1701713064::1702646534::1::::<><>::
-屏幕截图 2023-12-04 190435.jpg::CompressedTexture2D::2554326453874156104::1701713096::1702646534::1::::<><>::
-::res://Scripts/::1702647026
-Camera2D.gd::GDScript::-1::1702218114::0::1::::<>Camera2D<>::
-player.gd::GDScript::-1::1702422950::0::1::::<>RigidBody2D<>::
-world.gd::GDScript::-1::1702410946::0::1::::<>Node2D<>::
-::res://shop/::1702647026
-ExitButton.gd::GDScript::-1::1702643468::0::1::::<>Button<>::
-PurchaseButton.gd::GDScript::-1::1702646890::0::1::::<>Button<>::
-shop.tscn::PackedScene::9186845441468200424::1702645538::0::1::::<><>::uid://dn7wx0cu1koxh::::res://shop.tscn
-::res://SoundEffects/::1702647026
-Fail.wav::AudioStreamWAV::6416530840269442463::1702411486::1702646534::1::::<><>::
-Jump.wav::AudioStreamWAV::9069550967104920463::1702411486::1702646534::1::::<><>::
+::res://::1702906260
+background.jpg::CompressedTexture2D::5264390165839659738::1702906199::1702906199::1::::<><>::
+CanvasLayer.gd::GDScript::-1::1702906199::0::1::::<>CanvasLayer<>::
+game_scene.tscn::PackedScene::4569618282645088196::1702906199::0::1::::<><>::
+icon.svg::CompressedTexture2D::952823857060801387::1702906199::1702906252::1::::<><>::
+IMG_7365.JPG::CompressedTexture2D::5796956839322774591::1702906199::1702906199::1::::<><>::
+MainChar.png::CompressedTexture2D::6072889425123914673::1702906199::1702906199::1::::<><>::
+main_menu.tscn::PackedScene::285133182844743066::1702906260::0::1::::<><>::uid://chad0b35pilne::::res://background.jpg<>res://CanvasLayer.gd<>uid://xg605m843gih::::res://world.tscn<>uid://dn7wx0cu1koxh::::res://shop.tscn
+player.tscn::PackedScene::8800890041459513363::1702906199::0::1::::<><>::uid://c72n4p4pkf66a::::res://P.I.G/pixil-frame-0.png<>res://Scripts/player.gd<>uid://d2hmgdlggejkx::::res://SoundEffects/Jump.wav<>uid://cxohlcimog4xn::::res://SoundEffects/Fail.wav
+s.1.PNG::CompressedTexture2D::5940330567359602478::1702906199::1702906199::1::::<><>::
+s.2.PNG::CompressedTexture2D::191738737857955288::1702906199::1702906199::1::::<><>::
+shop.tscn::PackedScene::8139155270721537469::1702906199::0::1::::<><>::uid://coudbdhq48rv0::::res://IMG_7365.JPG<>res://shop/ExitButton.gd<>uid://cqvsm2j786xpm::::res://s.1.PNG<>uid://cy4552kjmen5::::res://s.2.PNG<>res://shop/PurchaseButton.gd
+tile2.tscn::PackedScene::704227968020475154::1702906199::0::1::::<><>::uid://bnn2er7h21oew::::res://P.I.G/tiles.png
+tile.tscn::PackedScene::2383839499599255080::1702906199::0::1::::<><>::uid://d1hxsli31iau3::::res://P.I.G/oumuamua.png
+world.tscn::PackedScene::1628658137599874047::1702906260::0::1::::<><>::uid://dxnhmxms0na4b::::res://player.tscn<>res://Scripts/world.gd<>uid://870qupft0mqa::::res://tile.tscn<>uid://deer176b0pr31::::res://P.I.G/Background.png<>uid://kbescxxb5e0q::::res://tile2.tscn
+::res://MainChar/::1702906199
+main_char.gd::GDScript::-1::1702906199::0::1::::<>Node2D<>::
+main_char.tscn::PackedScene::8443256266823147346::1702906199::0::1::::<><>::res://MainChar/main_char.gd
+::res://P.I.G/::1702906199
+Background.png::CompressedTexture2D::7449355284881824510::1702906199::1702906199::1::::<><>::
+oumuamua.png::CompressedTexture2D::9000051856493019044::1702906199::1702906199::1::::<><>::
+pixil-frame-0.png::CompressedTexture2D::7075464505436766722::1702906199::1702906199::1::::<><>::
+tiles.png::CompressedTexture2D::3327360006456474294::1702906199::1702906199::1::::<><>::
+屏幕截图 2023-12-06 151724.png::CompressedTexture2D::8505129255282937439::1702906199::1702906199::1::::<><>::
+::res://P.I.G/no use/::1702906199
+8fe869f1c3128ccc39a17c286fa5c1f8.jpg::CompressedTexture2D::1844275027997369396::1702906199::1702906199::1::::<><>::
+20180222200227_mHj4V.jpeg::CompressedTexture2D::4261286086200214246::1702906199::1702906199::1::::<><>::
+屏幕截图 2023-12-04 190231.jpg::CompressedTexture2D::3943749578677435957::1702906199::1702906199::1::::<><>::
+屏幕截图 2023-12-04 190407.jpg::CompressedTexture2D::3371067136497811486::1702906199::1702906199::1::::<><>::
+屏幕截图 2023-12-04 190435.jpg::CompressedTexture2D::2554326453874156104::1702906199::1702906199::1::::<><>::
+::res://Scripts/::1702906199
+Camera2D.gd::GDScript::-1::1702906199::0::1::::<>Camera2D<>::
+player.gd::GDScript::-1::1702906199::0::1::::<>RigidBody2D<>::
+world.gd::GDScript::-1::1702906199::0::1::::<>Node2D<>::
+::res://shop/::1702906199
+ExitButton.gd::GDScript::-1::1702906199::0::1::::<>Button<>::
+PurchaseButton.gd::GDScript::-1::1702906199::0::1::::<>Button<>::
+shop.tscn::PackedScene::9186845441468200424::1702906199::0::1::::<><>::uid://dn7wx0cu1koxh::::res://shop.tscn
+::res://SoundEffects/::1702906199
+Fail.wav::AudioStreamWAV::6416530840269442463::1702906199::1702906199::1::::<><>::
+Jump.wav::AudioStreamWAV::9069550967104920463::1702906199::1702906199::1::::<><>::
 mixkit-arcade-retro-jump-223.wav::::-1::0::0::0::::<><>::
-mixkit-bag-of-coins-touch-3187.wav::AudioStreamWAV::4639466848130838391::1702411486::1702646534::1::::<><>::
-mixkit-boxing-punch-2051.wav::AudioStreamWAV::5734140186067177653::1702411486::1702646534::1::::<><>::
-mixkit-bubbly-achievement-tone-3193.wav::AudioStreamWAV::3818478772449972243::1702411486::1702646535::1::::<><>::
-mixkit-extra-bonus-in-a-video-game-2045.wav::AudioStreamWAV::8818182503883331584::1702411486::1702646534::1::::<><>::
-mixkit-magic-sweep-game-trophy-257.wav::AudioStreamWAV::6827479607057777782::1702411486::1702646534::1::::<><>::
-mixkit-martial-arts-fast-punch-2047.wav::AudioStreamWAV::4041822049897598559::1702411486::1702646534::1::::<><>::
-mixkit-martial-arts-punch-2052.wav::AudioStreamWAV::2113639434158815380::1702411486::1702646534::1::::<><>::
-mixkit-mechanical-crate-pick-up-3154.wav::AudioStreamWAV::5155835648259974488::1702411486::1702646534::1::::<><>::
-mixkit-neutral-bot-pinbal-tone-3137.wav::AudioStreamWAV::6896987145306700636::1702411486::1702646534::1::::<><>::
-mixkit-player-recharging-in-video-game-2041.wav::AudioStreamWAV::6235224599844813081::1702411486::1702646534::1::::<><>::
-mixkit-quick-jump-arcade-game-239.wav::AudioStreamWAV::9205275267678285485::1702411486::1702646534::1::::<><>::
-mixkit-small-hit-in-a-game-2072.wav::AudioStreamWAV::4698573185782706739::1702411486::1702646534::1::::<><>::
+mixkit-bag-of-coins-touch-3187.wav::AudioStreamWAV::4639466848130838391::1702906199::1702906199::1::::<><>::
+mixkit-boxing-punch-2051.wav::AudioStreamWAV::5734140186067177653::1702906199::1702906199::1::::<><>::
+mixkit-bubbly-achievement-tone-3193.wav::AudioStreamWAV::3818478772449972243::1702906199::1702906199::1::::<><>::
+mixkit-extra-bonus-in-a-video-game-2045.wav::AudioStreamWAV::8818182503883331584::1702906199::1702906199::1::::<><>::
+mixkit-magic-sweep-game-trophy-257.wav::AudioStreamWAV::6827479607057777782::1702906199::1702906199::1::::<><>::
+mixkit-martial-arts-fast-punch-2047.wav::AudioStreamWAV::4041822049897598559::1702906199::1702906199::1::::<><>::
+mixkit-martial-arts-punch-2052.wav::AudioStreamWAV::2113639434158815380::1702906199::1702906199::1::::<><>::
+mixkit-mechanical-crate-pick-up-3154.wav::AudioStreamWAV::5155835648259974488::1702906199::1702906199::1::::<><>::
+mixkit-neutral-bot-pinbal-tone-3137.wav::AudioStreamWAV::6896987145306700636::1702906199::1702906199::1::::<><>::
+mixkit-player-recharging-in-video-game-2041.wav::AudioStreamWAV::6235224599844813081::1702906199::1702906199::1::::<><>::
+mixkit-quick-jump-arcade-game-239.wav::AudioStreamWAV::9205275267678285485::1702906199::1702906199::1::::<><>::
+mixkit-small-hit-in-a-game-2072.wav::AudioStreamWAV::4698573185782706739::1702906199::1702906199::1::::<><>::
