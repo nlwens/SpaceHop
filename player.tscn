@@ -24,10 +24,8 @@ shape = SubResource("RectangleShape2D_i2nd5")
 
 [node name="Jump" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_40s1n")
-volume_db = -10.0
 
 [node name="Fail" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_htmhy")
-volume_db = -20.0
 
 [connection signal="body_entered" from="Area2D" to="." method="collision"]

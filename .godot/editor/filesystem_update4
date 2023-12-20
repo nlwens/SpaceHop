@@ -3,3 +3,5 @@ res://bg.gdshader
 res://main_menu.tscn
 res://world.tscn
 res://player.tscn
+res://Scripts/player.gd
+res://bg_audio.tscn

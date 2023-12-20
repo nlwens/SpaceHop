@@ -15,6 +15,10 @@ run/main_scene="res://main_menu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+BgAudio="*res://bg_audio.tscn"
+
 [display]
 
 window/size/viewport_width=720

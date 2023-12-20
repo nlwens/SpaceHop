@@ -26,6 +26,7 @@ func _process(delta):
 
 func collision(body):	
 	if body.is_in_group('deadzone'):
+		BgAudio.stop()
 		$Fail.play()
 		get_node("Area2D").queue_free();
 		isAlive = false
