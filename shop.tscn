@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://dn7wx0cu1koxh"]
 
-[ext_resource type="Texture2D" uid="uid://coudbdhq48rv0" path="res://P.I.G/IMG_7365.JPG" id="1_a1fdp"]
+[ext_resource type="Texture2D" uid="uid://chad0b35pilne" path="res://P.I.G/background.jpg" id="1_60c3l"]
 [ext_resource type="Script" path="res://shop/ExitButton.gd" id="2_swsxj"]
 [ext_resource type="Texture2D" uid="uid://cqvsm2j786xpm" path="res://P.I.G/s.1.PNG" id="3_0mp4f"]
 [ext_resource type="Texture2D" uid="uid://cy4552kjmen5" path="res://P.I.G/s.2.PNG" id="4_7yey5"]
@@ -69,7 +69,7 @@ offset_bottom = 40.0
 [node name="SpaceBG" type="Sprite2D" parent="."]
 position = Vector2(360.75, 641)
 scale = Vector2(0.798333, 0.79875)
-texture = ExtResource("1_a1fdp")
+texture = ExtResource("1_60c3l")
 
 [node name="BG" type="Panel" parent="."]
 layout_mode = 0

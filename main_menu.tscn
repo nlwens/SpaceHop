@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://xg605m843gih" path="res://world.tscn" id="3_qiwvk"]
 [ext_resource type="PackedScene" uid="uid://dn7wx0cu1koxh" path="res://shop.tscn" id="4_m6lv6"]
 
+
 [node name="MainMenu" type="Node"]
 
 [node name="Background" type="TextureRect" parent="."]

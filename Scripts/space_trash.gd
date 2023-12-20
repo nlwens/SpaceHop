@@ -15,10 +15,11 @@ func _process(delta):
 	velocity = direction * speed
 	position += velocity * delta
 	prints(position.x)
-	if position.x > width/2 - 50:
+	if position.x > width:
 		direction *= -1
-	elif position.x < -width/2 + 50:
-		direction *= -1
+	elif position.x < 0:
+		direction *= 1
+	speed += 0.001
 	pass
 
 func response():

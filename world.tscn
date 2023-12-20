@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dxnhmxms0na4b" path="res://scene/player.tscn" id="1_78p7k"]
 [ext_resource type="Shader" path="res://bg.gdshader" id="2_wb5fo"]
-[ext_resource type="Texture2D" uid="uid://dhxtsmybvagmu" path="res://bg.JPG" id="3_3wmql"]
+[ext_resource type="Texture2D" uid="uid://dhxtsmybvagmu" path="res://P.I.G/bg.JPG" id="3_3wmql"]
 [ext_resource type="PackedScene" uid="uid://gyxkvptqdu2q" path="res://scene/tile_group.tscn" id="5_d3tqu"]
 [ext_resource type="PackedScene" uid="uid://870qupft0mqa" path="res://scene/tile.tscn" id="6_m12om"]
 [ext_resource type="Script" path="res://Scripts/tile_group.gd" id="6_mbc1w"]
@@ -36,7 +36,7 @@ func _process(delta):
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2325e"]
-size = Vector2(720, 111)
+size = Vector2(901, 111)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rrwmj"]
 size = Vector2(109, 1389)
@@ -78,21 +78,21 @@ player_path = NodePath("../player")
 position = Vector2(0, 46)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D"]
-position = Vector2(-1, 651)
+position = Vector2(-3.5, 651)
 shape = SubResource("RectangleShape2D_2325e")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Camera2D" groups=["deadzone"]]
 position = Vector2(0, 46)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D2"]
-position = Vector2(-418, 12.5)
+position = Vector2(-515, 8)
 shape = SubResource("RectangleShape2D_rrwmj")
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="Camera2D" groups=["deadzone"]]
 position = Vector2(834, 42)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D3"]
-position = Vector2(-418, 12.5)
+position = Vector2(-332, 13)
 shape = SubResource("RectangleShape2D_rrwmj")
 
 [node name="player" parent="." instance=ExtResource("1_78p7k")]
