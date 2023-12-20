@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://coudbdhq48rv0" path="res://P.I.G/IMG_7365.JPG" id="1_a1fdp"]
 [ext_resource type="Script" path="res://shop/ExitButton.gd" id="2_swsxj"]
-[ext_resource type="Texture2D" uid="uid://cqvsm2j786xpm" path="res://s.1.PNG" id="3_0mp4f"]
-[ext_resource type="Texture2D" uid="uid://cy4552kjmen5" path="res://s.2.PNG" id="4_7yey5"]
+[ext_resource type="Texture2D" uid="uid://cqvsm2j786xpm" path="res://P.I.G/s.1.PNG" id="3_0mp4f"]
+[ext_resource type="Texture2D" uid="uid://cy4552kjmen5" path="res://P.I.G/s.2.PNG" id="4_7yey5"]
 [ext_resource type="Script" path="res://shop/PurchaseButton.gd" id="5_qssjh"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4p6cn"]

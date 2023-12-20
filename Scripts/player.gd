@@ -24,15 +24,17 @@ func _process(delta):
 			set_linear_velocity(Vector2(speed, ySpeed))
 	pass
 
-func collision(body):	
+func collision(body):		
+	if body.is_in_group('paddles') and get_linear_velocity().y > 0:
+		$Jump.play()
+		set_linear_velocity(Vector2(0,-jump_speed))
+	pass
+
+
+func whole_body(body):
 	if body.is_in_group('deadzone'):
 		BgAudio.stop()
 		$Fail.play()
 		get_node("Area2D").queue_free();
 		isAlive = false
-	pass
-	
-	if body.is_in_group('paddles') and get_linear_velocity().y > 0:
-		$Jump.play()
-		set_linear_velocity(Vector2(0,-jump_speed))
-	pass
+	pass # Replace with function body.

@@ -17,7 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-BgAudio="*res://bg_audio.tscn"
+BgAudio="*res://scene/bg_audio.tscn"
 
 [display]
 

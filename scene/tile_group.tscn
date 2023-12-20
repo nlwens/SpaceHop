@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://gyxkvptqdu2q"]
+
+[node name="tile_group" type="Node2D"]
