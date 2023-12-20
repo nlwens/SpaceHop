@@ -1,5 +1,8 @@
-res://shop.tscn
-res://bg.gdshader
 res://main_menu.tscn
+res://bg.gdshader
 res://world.tscn
 res://player.tscn
+res://shop.tscn
+res://Scripts/world.gd
+res://tile2.tscn
+res://tile.tscn

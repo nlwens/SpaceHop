@@ -6,6 +6,7 @@
 size = Vector2(53, 18)
 
 [node name="tile" type="StaticBody2D" groups=["paddles"]]
+texture_filter = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-6, -3)
