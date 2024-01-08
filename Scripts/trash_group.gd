@@ -8,7 +8,7 @@ func _ready():
 	width = get_viewport().get_visible_rect().size.x
 	randomize()
 	var y = 0
-	while y > -30000:
+	while y > -300000:
 		var trash = trash.instantiate()
 		var temp = randi_range(-1,1)
 		trash.set_position(Vector2((width/2+10)*temp,y))

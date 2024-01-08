@@ -78,15 +78,6 @@ position = Vector2(-64, -417)
 [node name="tile5" parent="tile_group/tile" instance=ExtResource("6_m12om")]
 position = Vector2(190, -234)
 
-[node name="StarsContainer" type="Node2D" parent="tile_group"]
-position = Vector2(3, 549)
-
-[node name="star" parent="tile_group/StarsContainer" instance=ExtResource("6_whv8f")]
-position = Vector2(163, -333)
-
-[node name="star2" parent="tile_group/StarsContainer" instance=ExtResource("6_whv8f")]
-position = Vector2(-192, -514)
-
 [node name="Camera2D" type="Camera2D" parent="."]
 script = SubResource("GDScript_f3286")
 player_path = NodePath("../player")
@@ -111,6 +102,15 @@ position = Vector2(834, 42)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D3"]
 position = Vector2(-332, 13)
 shape = SubResource("RectangleShape2D_rrwmj")
+
+[node name="StarsContainer" type="Node2D" parent="."]
+position = Vector2(3, 549)
+
+[node name="star" parent="StarsContainer" instance=ExtResource("6_whv8f")]
+position = Vector2(163, -333)
+
+[node name="star2" parent="StarsContainer" instance=ExtResource("6_whv8f")]
+position = Vector2(-192, -514)
 
 [node name="player" parent="." instance=ExtResource("1_78p7k")]
 texture_filter = 1

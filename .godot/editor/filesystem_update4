@@ -1,5 +1,2 @@
-res://main_menu.tscn
-res://bg.gdshader
-res://Scripts/player.gd
 res://world.tscn
-res://star.tscn
+res://bg.gdshader
