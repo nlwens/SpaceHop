@@ -1,6 +1,5 @@
-res://world.tscn
+res://main_menu.tscn
 res://bg.gdshader
-res://Scripts/space_trash.gd
-res://scene/space_trash.tscn
-res://Scripts/trash_group.gd
-res://shop.tscn
+res://Scripts/player.gd
+res://world.tscn
+res://star.tscn

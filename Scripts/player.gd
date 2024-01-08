@@ -38,3 +38,6 @@ func whole_body(body):
 		get_node("Area2D").queue_free();
 		isAlive = false
 	pass # Replace with function body.
+
+
+

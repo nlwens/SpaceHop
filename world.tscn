@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://xg605m843gih"]
+[gd_scene load_steps=15 format=3 uid="uid://xg605m843gih"]
 
 [ext_resource type="PackedScene" uid="uid://dxnhmxms0na4b" path="res://scene/player.tscn" id="1_78p7k"]
 [ext_resource type="Shader" path="res://bg.gdshader" id="2_wb5fo"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://gyxkvptqdu2q" path="res://scene/tile_group.tscn" id="5_d3tqu"]
 [ext_resource type="PackedScene" uid="uid://870qupft0mqa" path="res://scene/tile.tscn" id="6_m12om"]
 [ext_resource type="Script" path="res://Scripts/tile_group.gd" id="6_mbc1w"]
+[ext_resource type="PackedScene" uid="uid://cf1nfupcwuym" path="res://star.tscn" id="6_whv8f"]
 [ext_resource type="Script" path="res://Scripts/trash_group.gd" id="8_66evp"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_oolo6"]
@@ -41,6 +42,13 @@ size = Vector2(901, 111)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rrwmj"]
 size = Vector2(109, 1389)
 
+[sub_resource type="FontVariation" id="FontVariation_hwowv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ibajg"]
+font = SubResource("FontVariation_hwowv")
+font_size = 32
+font_color = Color(1, 1, 1, 0.933333)
+
 [node name="world" type="Node2D"]
 position = Vector2(359, 644)
 metadata/_edit_horizontal_guides_ = [-641.0]
@@ -48,10 +56,10 @@ metadata/_edit_vertical_guides_ = [-359.0]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 material = SubResource("ShaderMaterial_oolo6")
-offset_left = -453.0
-offset_top = -2395.0
-offset_right = 447.0
-offset_bottom = 805.0
+offset_left = -439.0
+offset_top = -2584.0
+offset_right = 461.0
+offset_bottom = 616.0
 texture = ExtResource("3_3wmql")
 stretch_mode = 1
 
@@ -69,6 +77,15 @@ position = Vector2(-64, -417)
 
 [node name="tile5" parent="tile_group/tile" instance=ExtResource("6_m12om")]
 position = Vector2(190, -234)
+
+[node name="StarsContainer" type="Node2D" parent="tile_group"]
+position = Vector2(3, 549)
+
+[node name="star" parent="tile_group/StarsContainer" instance=ExtResource("6_whv8f")]
+position = Vector2(163, -333)
+
+[node name="star2" parent="tile_group/StarsContainer" instance=ExtResource("6_whv8f")]
+position = Vector2(-192, -514)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 script = SubResource("GDScript_f3286")
@@ -103,3 +120,13 @@ camera_path = NodePath("../Camera2D")
 [node name="trash_group" type="Node2D" parent="."]
 position = Vector2(23, -349)
 script = ExtResource("8_66evp")
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 263.0
+offset_top = -609.0
+offset_right = 348.0
+offset_bottom = -564.0
+text = "0"
+label_settings = SubResource("LabelSettings_ibajg")
+horizontal_alignment = 1
+vertical_alignment = 1
