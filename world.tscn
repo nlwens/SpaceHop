@@ -1,18 +1,14 @@
-[gd_scene load_steps=15 format=3 uid="uid://xg605m843gih"]
+[gd_scene load_steps=13 format=3 uid="uid://xg605m843gih"]
 
 [ext_resource type="PackedScene" uid="uid://dxnhmxms0na4b" path="res://scene/player.tscn" id="1_78p7k"]
-[ext_resource type="Shader" path="res://bg.gdshader" id="2_wb5fo"]
-[ext_resource type="Texture2D" uid="uid://dhxtsmybvagmu" path="res://P.I.G/bg.JPG" id="3_3wmql"]
 [ext_resource type="PackedScene" uid="uid://gyxkvptqdu2q" path="res://scene/tile_group.tscn" id="5_d3tqu"]
 [ext_resource type="PackedScene" uid="uid://870qupft0mqa" path="res://scene/tile.tscn" id="6_m12om"]
 [ext_resource type="Script" path="res://Scripts/tile_group.gd" id="6_mbc1w"]
 [ext_resource type="PackedScene" uid="uid://cf1nfupcwuym" path="res://star.tscn" id="6_whv8f"]
 [ext_resource type="Script" path="res://Scripts/trash_group.gd" id="8_66evp"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_oolo6"]
-shader = ExtResource("2_wb5fo")
-shader_parameter/direction = Vector2(0, 1)
-shader_parameter/speed_scale = 0.1
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jiot4"]
+load_path = "res://.godot/imported/background.jpg-b3e230b91105fdc212a16aa687ae4a4e.ctex"
 
 [sub_resource type="GDScript" id="GDScript_f3286"]
 script/source = "extends Camera2D
@@ -54,14 +50,17 @@ position = Vector2(359, 644)
 metadata/_edit_horizontal_guides_ = [-641.0]
 metadata/_edit_vertical_guides_ = [-359.0]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-material = SubResource("ShaderMaterial_oolo6")
-offset_left = -439.0
-offset_top = -2584.0
-offset_right = 461.0
-offset_bottom = 616.0
-texture = ExtResource("3_3wmql")
-stretch_mode = 1
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(0, 3)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(-132, -322)
+scale = Vector2(1.07222, 1)
+texture = SubResource("CompressedTexture2D_jiot4")
+centered = false
+offset = Vector2(0, -1)
 
 [node name="tile_group" parent="." instance=ExtResource("5_d3tqu")]
 script = ExtResource("6_mbc1w")
@@ -86,21 +85,21 @@ player_path = NodePath("../player")
 position = Vector2(0, 46)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D"]
-position = Vector2(-3.5, 651)
+position = Vector2(-20, 665)
 shape = SubResource("RectangleShape2D_2325e")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Camera2D" groups=["deadzone"]]
 position = Vector2(0, 46)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D2"]
-position = Vector2(-515, 8)
+position = Vector2(-531, -57)
 shape = SubResource("RectangleShape2D_rrwmj")
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="Camera2D" groups=["deadzone"]]
 position = Vector2(834, 42)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D3"]
-position = Vector2(-332, 13)
+position = Vector2(-417, -59)
 shape = SubResource("RectangleShape2D_rrwmj")
 
 [node name="StarsContainer" type="Node2D" parent="."]
