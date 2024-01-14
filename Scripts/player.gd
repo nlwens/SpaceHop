@@ -6,6 +6,7 @@ var speed = 200
 var gravity = 10
 var isAlive = true
 var deadzone_y = -1
+@export_node_path("CollisionShape2D") var feet
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -38,8 +39,8 @@ func _on_deadzone_enter():
 	isAlive = false
 	BgAudio.stop()
 	$Fail.play()
-	get_node("Area2D").queue_free()
 	print("Entered the dead zone.")
+	await get_tree().create_timer(2).timeout
 	_reset_to_main_menu()
 	# Add any other actions or behavior when the character enters the dead zone here
 
@@ -52,7 +53,13 @@ func _reset_to_main_menu():
 	pass
 
 func collision(body):
-	if body.is_in_group('paddles') and get_linear_velocity().y > 0:
+	if body.is_in_group('paddles') and get_linear_velocity().y > 0 and isAlive:
 		$Jump.play()
 		set_linear_velocity(Vector2(0, -jump_speed))
 	pass
+
+
+func whole_body(body):
+	if body.is_in_group('deadzone'):
+		_on_deadzone_enter()
+	pass # Replace with function body.
