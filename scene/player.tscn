@@ -12,6 +12,7 @@ size = Vector2(64.2172, 131.407)
 size = Vector2(62.2887, 19.1107)
 
 [node name="player" type="RigidBody2D"]
+texture_filter = 1
 script = ExtResource("1_avpqq")
 
 [node name="Area2D2" type="Area2D" parent="."]
@@ -34,9 +35,11 @@ shape = SubResource("RectangleShape2D_i2nd5")
 
 [node name="Jump" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_40s1n")
+volume_db = -10.0
 
 [node name="Fail" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_htmhy")
+volume_db = -20.0
 
 [connection signal="body_entered" from="Area2D2" to="." method="whole_body"]
 [connection signal="body_entered" from="Area2D" to="." method="collision"]

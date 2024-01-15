@@ -15,10 +15,13 @@ run/main_scene="res://main_menu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
+<<<<<<< Updated upstream
+=======
 [autoload]
 
 BgAudio="*res://scene/bg_audio.tscn"
 
+>>>>>>> Stashed changes
 [display]
 
 window/size/viewport_width=720

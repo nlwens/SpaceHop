@@ -1,9 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://dn7wx0cu1koxh"]
+[gd_scene load_steps=10 format=3 uid="uid://dn7wx0cu1koxh"]
 
-[ext_resource type="Texture2D" uid="uid://chad0b35pilne" path="res://P.I.G/background.jpg" id="1_60c3l"]
+[ext_resource type="Texture2D" path="res://background.jpg" id="1_60c3l"]
 [ext_resource type="Script" path="res://shop/ExitButton.gd" id="2_swsxj"]
-[ext_resource type="Texture2D" uid="uid://cqvsm2j786xpm" path="res://P.I.G/s.1.PNG" id="3_0mp4f"]
-[ext_resource type="Texture2D" uid="uid://cy4552kjmen5" path="res://P.I.G/s.2.PNG" id="4_7yey5"]
 [ext_resource type="Script" path="res://shop/PurchaseButton.gd" id="5_qssjh"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4p6cn"]
@@ -113,12 +111,10 @@ script = ExtResource("2_swsxj")
 [node name="NewChar1" type="Sprite2D" parent="."]
 position = Vector2(329, 493)
 scale = Vector2(0.334223, 0.317844)
-texture = ExtResource("3_0mp4f")
 
 [node name="NewChar2" type="Sprite2D" parent="."]
 position = Vector2(334, 771)
 scale = Vector2(0.329468, 0.315597)
-texture = ExtResource("4_7yey5")
 
 [node name="Cost1" type="Label" parent="."]
 layout_mode = 0

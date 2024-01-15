@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dt077mwrbimra"]
 
+[ext_resource type="Texture2D" uid="uid://nts4tnlpgwgh" path="res://icon.svg" id="1_pqp8g"]
 [ext_resource type="Script" path="res://Scripts/space_trash.gd" id="1_yymtg"]
-[ext_resource type="Texture2D" uid="uid://bcfv116170jtw" path="res://P.I.G/juice-trash.png" id="2_q2u3g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fn7cs"]
 size = Vector2(55, 58)
@@ -12,8 +12,8 @@ script = ExtResource("1_yymtg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-2, -2)
-scale = Vector2(2, 2.226)
-texture = ExtResource("2_q2u3g")
+scale = Vector2(0.424641, 0.473239)
+texture = ExtResource("1_pqp8g")
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2(-2, -2)

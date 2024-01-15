@@ -14,6 +14,7 @@ func _process(delta):
 	width = get_viewport_rect().size.x
 	velocity = direction * speed
 	position += velocity * delta
+	prints(position.x)
 	if position.x > width:
 		direction *= -1
 	elif position.x < 0:
