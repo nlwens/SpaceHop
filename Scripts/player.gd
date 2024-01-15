@@ -40,7 +40,7 @@ func _on_deadzone_enter():
 	BgAudio.stop()
 	$Fail.play()
 	print("Entered the dead zone.")
-	await get_tree().create_timer(2).timeout
+	#await get_tree().create_timer(2).timeout
 	_reset_to_main_menu()
 	# Add any other actions or behavior when the character enters the dead zone here
 
@@ -49,7 +49,7 @@ func _reset_to_main_menu():
 	# For example, you can load a new scene or reset the current scene
 	# Replace the following line with your actual code
 	print("Resetting to main menu...")
-	get_tree().change_scene_to_file("res://main_menu.tscn")
+	get_tree().change_scene_to_file("res://scene/deadscene.tscn")
 	pass
 
 func collision(body):
