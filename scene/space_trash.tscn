@@ -12,7 +12,7 @@ position = Vector2(0, 1)
 script = ExtResource("1_yymtg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-2, -2)
+position = Vector2(26, -13)
 scale = Vector2(2, 2.226)
 texture = ExtResource("2_q2u3g")
 

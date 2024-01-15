@@ -1,5 +1,6 @@
 res://world.tscn
 res://bg.gdshader
 res://scene/space_trash.tscn
-res://CanvasLayer.gd
-res://main_menu.tscn
+res://Scripts/trash_group.gd
+res://scene/banana_trash.tscn
+res://scene/banana_trash.gd
