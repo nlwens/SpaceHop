@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dxnhmxms0na4b"]
+[gd_scene load_steps=6 format=3 uid="uid://sl7n1181e1jm"]
 
 [ext_resource type="Texture2D" uid="uid://c72n4p4pkf66a" path="res://P.I.G/pixil-frame-0.png" id="1_8k6jc"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_avpqq"]
@@ -9,6 +9,7 @@
 size = Vector2(45, 16)
 
 [node name="player" type="RigidBody2D"]
+texture_filter = 1
 script = ExtResource("1_avpqq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

@@ -1,12 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://xg605m843gih"]
+[gd_scene load_steps=11 format=3 uid="uid://xg605m843gih"]
 
-[ext_resource type="PackedScene" uid="uid://dxnhmxms0na4b" path="res://player.tscn" id="1_78p7k"]
+[ext_resource type="PackedScene" uid="uid://sl7n1181e1jm" path="res://player.tscn" id="1_78p7k"]
 [ext_resource type="Script" path="res://Scripts/world.gd" id="1_oqe1j"]
-[ext_resource type="PackedScene" uid="uid://870qupft0mqa" path="res://tile.tscn" id="2_lij5i"]
+[ext_resource type="PackedScene" path="res://tile.tscn" id="2_lij5i"]
 [ext_resource type="Shader" path="res://bg.gdshader" id="2_wb5fo"]
-[ext_resource type="Texture2D" uid="uid://dhxtsmybvagmu" path="res://bg.JPG" id="3_3wmql"]
-[ext_resource type="PackedScene" uid="uid://kbescxxb5e0q" path="res://tile2.tscn" id="4_46774"]
-[ext_resource type="AudioStream" uid="uid://dm56wx7u7gpkx" path="res://SoundEffects/BGM.mp3" id="7_1ulis"]
+[ext_resource type="Texture2D" path="res://bg.JPG" id="3_3wmql"]
+[ext_resource type="PackedScene" path="res://tile2.tscn" id="4_46774"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_oolo6"]
 shader = ExtResource("2_wb5fo")
@@ -57,7 +56,6 @@ texture = ExtResource("3_3wmql")
 stretch_mode = 1
 
 [node name="player" parent="." instance=ExtResource("1_78p7k")]
-texture_filter = 1
 position = Vector2(0, 381)
 camera_path = NodePath("../Camera2D")
 
@@ -103,7 +101,3 @@ position = Vector2(834, 42)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D3"]
 position = Vector2(-418, 12.5)
 shape = SubResource("RectangleShape2D_rrwmj")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("7_1ulis")
-autoplay = true

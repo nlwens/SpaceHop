@@ -6,3 +6,4 @@ res://shop.tscn
 res://Scripts/world.gd
 res://tile2.tscn
 res://tile.tscn
+res://CanvasLayer.gd

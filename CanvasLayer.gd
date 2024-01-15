@@ -19,10 +19,14 @@ func _on_button_settings_back_pressed():
 	settings.visible = false
 	
 func _on_button_shop_pressed():
-	get_tree().change_scene_to_file("res://shop.tscn")
+	get_tree().change_scene_to_file("res://shop/shop.tscn")
 	
 func _on_button_shop_back_pressed():
 	main.visible = true
 	shop.visible= false
 	
 
+
+
+func _on_button_quit_pressed():
+	get_tree().quit()

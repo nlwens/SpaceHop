@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://cf1nfupcwuym"]
+
+[ext_resource type="Script" path="res://star.gd" id="1_keoib"]
+[ext_resource type="Texture2D" uid="uid://bfd3vjuw0tiad" path="res://P.I.G/star.PNG" id="2_eakvs"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y41rv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_eakvs")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_du477"]
+size = Vector2(46.5, 56)
+
+[node name="star" type="Area2D"]
+script = ExtResource("1_keoib")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-7.62939e-06, 0)
+scale = Vector2(-2.27231, 2.86946)
+sprite_frames = SubResource("SpriteFrames_y41rv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.999999, 1)
+shape = SubResource("RectangleShape2D_du477")
+
+[node name="TouchTimer" type="Timer" parent="."]

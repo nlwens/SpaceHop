@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://dxnhmxms0na4b"]
+
+[ext_resource type="Texture2D" uid="uid://c72n4p4pkf66a" path="res://P.I.G/pixil-frame-0.png" id="1_8k6jc"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_avpqq"]
+[ext_resource type="AudioStream" uid="uid://d2hmgdlggejkx" path="res://SoundEffects/Jump.wav" id="3_40s1n"]
+[ext_resource type="AudioStream" uid="uid://cxohlcimog4xn" path="res://SoundEffects/Fail.wav" id="4_htmhy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nyl47"]
+size = Vector2(64.2172, 131.407)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i2nd5"]
+size = Vector2(62.2887, 19.1107)
+
+[node name="player" type="RigidBody2D"]
+texture_filter = 1
+script = ExtResource("1_avpqq")
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2(76.4066, -46.0818)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(-84.9165, 14.8746)
+shape = SubResource("RectangleShape2D_nyl47")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(14, 56)
+scale = Vector2(5, 4.644)
+texture = ExtResource("1_8k6jc")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-9.64435, 44.4447)
+shape = SubResource("RectangleShape2D_i2nd5")
+
+[node name="Jump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_40s1n")
+volume_db = -10.0
+
+[node name="Fail" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_htmhy")
+volume_db = -20.0
+
+[connection signal="body_entered" from="Area2D2" to="." method="whole_body"]
+[connection signal="body_entered" from="Area2D" to="." method="collision"]
