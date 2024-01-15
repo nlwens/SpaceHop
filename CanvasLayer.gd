@@ -26,3 +26,7 @@ func _on_button_shop_back_pressed():
 	shop.visible= false
 	
 
+
+
+func _on_button_quit_pressed():
+	get_tree().quit()

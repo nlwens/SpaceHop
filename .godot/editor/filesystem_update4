@@ -1,9 +1,5 @@
 res://world.tscn
-res://star.tscn
-res://scene/space_trash.tscn
-res://Scripts/player.gd
-res://scene/player.tscn
-res://CanvasLayer.gd
 res://bg.gdshader
-res://Scripts/trash_group.gd
-res://Scripts/space_trash.gd
+res://scene/space_trash.tscn
+res://CanvasLayer.gd
+res://main_menu.tscn
