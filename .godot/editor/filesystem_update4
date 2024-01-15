@@ -1,5 +1,16 @@
+<<<<<<< Updated upstream
 res://main_menu.tscn
 res://bg.gdshader
 res://Scripts/player.gd
 res://world.tscn
 res://star.tscn
+=======
+res://world.tscn
+res://bg.gdshader
+res://main_menu.tscn
+res://Scripts/player.gd
+res://CanvasLayer.gd
+res://GameState.gd
+res://world.gd
+res://star.gd
+>>>>>>> Stashed changes

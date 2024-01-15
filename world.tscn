@@ -1,12 +1,17 @@
 [gd_scene load_steps=15 format=3 uid="uid://xg605m843gih"]
 
 [ext_resource type="PackedScene" uid="uid://dxnhmxms0na4b" path="res://scene/player.tscn" id="1_78p7k"]
+<<<<<<< Updated upstream
 [ext_resource type="Shader" path="res://bg.gdshader" id="2_wb5fo"]
 [ext_resource type="Texture2D" uid="uid://dhxtsmybvagmu" path="res://P.I.G/bg.JPG" id="3_3wmql"]
+=======
+[ext_resource type="Script" path="res://world.gd" id="1_cq54j"]
+>>>>>>> Stashed changes
 [ext_resource type="PackedScene" uid="uid://gyxkvptqdu2q" path="res://scene/tile_group.tscn" id="5_d3tqu"]
 [ext_resource type="PackedScene" uid="uid://870qupft0mqa" path="res://scene/tile.tscn" id="6_m12om"]
 [ext_resource type="Script" path="res://Scripts/tile_group.gd" id="6_mbc1w"]
 [ext_resource type="PackedScene" uid="uid://cf1nfupcwuym" path="res://star.tscn" id="6_whv8f"]
+[ext_resource type="Texture2D" uid="uid://bgrl8et2qjqat" path="res://P.I.G/coin.png" id="7_34214"]
 [ext_resource type="Script" path="res://Scripts/trash_group.gd" id="8_66evp"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_oolo6"]
@@ -46,11 +51,12 @@ size = Vector2(109, 1389)
 
 [sub_resource type="LabelSettings" id="LabelSettings_ibajg"]
 font = SubResource("FontVariation_hwowv")
-font_size = 32
+font_size = 34
 font_color = Color(1, 1, 1, 0.933333)
 
 [node name="world" type="Node2D"]
 position = Vector2(359, 644)
+script = ExtResource("1_cq54j")
 metadata/_edit_horizontal_guides_ = [-641.0]
 metadata/_edit_vertical_guides_ = [-359.0]
 
@@ -121,12 +127,20 @@ camera_path = NodePath("../Camera2D")
 position = Vector2(23, -349)
 script = ExtResource("8_66evp")
 
-[node name="ScoreLabel" type="Label" parent="."]
-offset_left = 263.0
-offset_top = -609.0
-offset_right = 348.0
-offset_bottom = -564.0
+[node name="MoneyDisplay" type="CanvasLayer" parent="."]
+
+[node name="ScoreLabel" type="Label" parent="MoneyDisplay"]
+texture_filter = 1
+offset_left = 627.0
+offset_top = 32.0
+offset_right = 715.0
+offset_bottom = 86.0
 text = "0"
 label_settings = SubResource("LabelSettings_ibajg")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Coin" type="Sprite2D" parent="MoneyDisplay"]
+position = Vector2(623, 60)
+scale = Vector2(0.0888252, 0.0902256)
+texture = ExtResource("7_34214")

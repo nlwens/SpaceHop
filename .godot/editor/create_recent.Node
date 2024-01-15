@@ -1,9 +1,14 @@
+<<<<<<< Updated upstream
 Timer
 Label
 Node2D
 Area2D
 CollisionShape2D
 AnimatedSprite2D
+=======
+CanvasLayer
+Button
+>>>>>>> Stashed changes
 Sprite2D
 Container
 StaticBody2D
