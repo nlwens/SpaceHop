@@ -1,20 +1,4 @@
-<<<<<<< HEAD
-Button
-Label
-AudioStreamPlayer
-TextureRect
-Control
-ScrollContainer
-VBoxContainer
-MarginContainer
-PanelContainer
-CenterContainer
-CanvasLayer
-Node
-HBoxContainer
-=======
 Sprite2D
 ParallaxLayer
 ParallaxBackground
 ShapeCast2D
->>>>>>> e1bd7c28d5f2b285897c5ab19161880b7774ea03
