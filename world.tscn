@@ -1,10 +1,11 @@
-[gd_scene load_steps=16 format=3 uid="uid://xg605m843gih"]
+[gd_scene load_steps=17 format=3 uid="uid://xg605m843gih"]
 
 [ext_resource type="PackedScene" uid="uid://dxnhmxms0na4b" path="res://scene/player.tscn" id="1_78p7k"]
+[ext_resource type="Script" path="res://Scripts/StarsContainer.gd" id="4_i7dug"]
 [ext_resource type="PackedScene" uid="uid://gyxkvptqdu2q" path="res://scene/tile_group.tscn" id="5_d3tqu"]
 [ext_resource type="PackedScene" uid="uid://870qupft0mqa" path="res://scene/tile.tscn" id="6_m12om"]
 [ext_resource type="Script" path="res://Scripts/tile_group.gd" id="6_mbc1w"]
-[ext_resource type="PackedScene" uid="uid://cf1nfupcwuym" path="res://star.tscn" id="6_whv8f"]
+[ext_resource type="PackedScene" uid="uid://cf1nfupcwuym" path="res://scene/star.tscn" id="6_whv8f"]
 [ext_resource type="PackedScene" uid="uid://btr7i0mid10dh" path="res://scene/bg_audio.tscn" id="7_qgm7s"]
 [ext_resource type="Script" path="res://Scripts/trash_group.gd" id="8_66evp"]
 [ext_resource type="Script" path="res://Scripts/ScoreLabel.gd" id="8_oegoc"]
@@ -107,12 +108,10 @@ shape = SubResource("RectangleShape2D_rrwmj")
 
 [node name="StarsContainer" type="Node2D" parent="."]
 position = Vector2(3, 549)
+script = ExtResource("4_i7dug")
 
 [node name="star" parent="StarsContainer" instance=ExtResource("6_whv8f")]
 position = Vector2(163, -333)
-
-[node name="star2" parent="StarsContainer" instance=ExtResource("6_whv8f")]
-position = Vector2(-192, -514)
 
 [node name="player" parent="." instance=ExtResource("1_78p7k")]
 texture_filter = 1

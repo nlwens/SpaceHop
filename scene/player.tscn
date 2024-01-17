@@ -6,6 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://cxohlcimog4xn" path="res://SoundEffects/Fail.wav" id="4_htmhy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5fmms"]
+size = Vector2(87, 165)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nyl47"]
 size = Vector2(64.2172, 131.407)
@@ -19,6 +20,7 @@ script = ExtResource("1_avpqq")
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." groups=["player"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-10.5, -27.5)
 shape = SubResource("RectangleShape2D_5fmms")
 
 [node name="Area2D2" type="Area2D" parent="."]

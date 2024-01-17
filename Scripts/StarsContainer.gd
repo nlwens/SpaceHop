@@ -1,7 +1,7 @@
 extends Node2D
 
-var tile = preload("res://scene/Space_trash.tscn")
-var width : float
+var star = preload("res://scene/star.tscn")
+var width = get_viewport_rect().size.x
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -9,13 +9,15 @@ func _ready():
 	randomize()
 	var y = 0
 	while y > -30000:
-		var trash = trash.instantiate()
-		trash.set_position(Vector2(randf_range(-width/2,width/2),y))
-		add_child(trash)
-		y -= randf_range(300,550)
+		var new_star = star.instantiate()
+		new_star.set_position(Vector2(randf_range(-width/2,width/2),y))
+		add_child(new_star)
+		y -= randf_range(100,300)
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+
