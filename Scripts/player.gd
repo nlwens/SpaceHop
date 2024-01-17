@@ -60,6 +60,4 @@ func collision(body):
 func whole_body(body):
 	if body.is_in_group('deadzone'):
 		_on_deadzone_enter()
-	if body.is_in_group('star'):
-		Global.score += 10
 	pass # Replace with function body.

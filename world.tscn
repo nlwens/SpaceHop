@@ -88,7 +88,7 @@ player_path = NodePath("../player")
 position = Vector2(0, 46)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D"]
-position = Vector2(-20, 665)
+position = Vector2(-20, 627)
 shape = SubResource("RectangleShape2D_2325e")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Camera2D" groups=["deadzone"]]

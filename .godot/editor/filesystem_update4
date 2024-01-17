@@ -3,6 +3,7 @@ res://scene/space_trash.tscn
 res://scene/player.tscn
 res://scene/tile.tscn
 res://star.tscn
-res://star.gd
-res://scene/CollisionShape2D.gd
 res://Scripts/player.gd
+res://star.gd
+res://world.tscn
+res://Scripts/global.gd
