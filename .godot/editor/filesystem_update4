@@ -1,4 +1,3 @@
 res://scene/banana_trash.tscn
-res://main_menu.tscn
-res://scene/deadscene.tscn
-res://scene/player.tscn
+res://scene/space_trash.tscn
+res://world.tscn

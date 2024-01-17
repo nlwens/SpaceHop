@@ -38,9 +38,9 @@ func _on_deadzone_enter():
 	# Action when entering the dead zone (fallen down)
 	isAlive = false
 	BgAudio.stop()
-	#$Fail.play()
+	$Fail.play()
 	print("Entered the dead zone.")
-	await get_tree().create_timer(1).timeout
+	#await get_tree().create_timer(2).timeout
 	_reset_to_main_menu()
 	# Add any other actions or behavior when the character enters the dead zone here
 

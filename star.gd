@@ -3,7 +3,15 @@ extends Area2D
 
 signal collected
 
+var star_value = 1  # The value of the star in terms of score
+
 var touch_duration = 0.5  # Duration before the star is considered collected
+
+func _on_Star_body_entered(body):  # Adjust the function to match your signal connection
+	if body.is_in_group("player"):  # Check if the collided body is the player
+		GameState.add_score(star_value)  # Increase the player's score
+		queue_free()  # Optionally remove the star after collection
+
 
 func _ready():
 	# Access the Timer node and configure it
