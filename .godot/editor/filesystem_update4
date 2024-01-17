@@ -1,4 +1,10 @@
 res://world.tscn
 res://scene/banana_trash.tscn
+<<<<<<< Updated upstream
 res://scene/space_trash.tscn
 res://Scripts/CanvasLayer.gd
+=======
+res://main_menu.tscn
+res://scene/deadscene.tscn
+res://scene/player.tscn
+>>>>>>> Stashed changes
