@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5koofacibdqd"
-path="res://.godot/imported/video-game-coins-set_125371-125_copy-removebg-preview.png-2447aae8987359f7e4539afcca488558.ctex"
+path="res://.godot/imported/coin.png-7e710de472b75b3653c3283ef5153eb4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://video-game-coins-set_125371-125_copy-removebg-preview.png"
-dest_files=["res://.godot/imported/video-game-coins-set_125371-125_copy-removebg-preview.png-2447aae8987359f7e4539afcca488558.ctex"]
+source_file="res://coin.png"
+dest_files=["res://.godot/imported/coin.png-7e710de472b75b3653c3283ef5153eb4.ctex"]
 
 [params]
 

@@ -32,12 +32,8 @@ func _on_button_shop_pressed():
 func _on_button_shop_back_pressed():
 	main.visible = true
 	shop.visible= false
-<<<<<<< Updated upstream
-	
 
-=======
 
 
 func _on_button_quit_pressed():
 	get_tree().quit()
->>>>>>> Stashed changes
