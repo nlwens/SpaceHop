@@ -1,10 +1,9 @@
-res://world.tscn
-res://Scripts/StarsContainer.gd
-res://scene/star.tscn
+res://main_menu.tscn
 res://scene/banana_trash.tscn
 res://scene/space_trash.tscn
 res://scene/player.tscn
 res://scene/tile.tscn
-res://Scripts/global.gd
-res://Scripts/Node2D.gd
+res://scene/star.tscn
+res://world.tscn
 res://signal_manager.tscn
+res://shop/shop.tscn

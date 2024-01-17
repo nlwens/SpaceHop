@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://ecedp0vfnmny"]
+[gd_scene load_steps=4 format=3 uid="uid://ecedp0vfnmny"]
 
+[ext_resource type="PackedScene" uid="uid://btr7i0mid10dh" path="res://scene/bg_audio.tscn" id="2_8hgqc"]
 [ext_resource type="Texture2D" uid="uid://chad0b35pilne" path="res://P.I.G/background.jpg" id="2_hdk2m"]
 [ext_resource type="Script" path="res://Scripts/CanvasLayer.gd" id="2_knwgp"]
 
@@ -155,6 +156,8 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 30
 text = "Back"
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("2_8hgqc")]
 
 [node name="SpaceBG" type="Sprite2D" parent="."]
 position = Vector2(518.75, 641)
