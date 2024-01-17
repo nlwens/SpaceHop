@@ -122,6 +122,10 @@ camera_path = NodePath("../Camera2D")
 position = Vector2(23, -349)
 script = ExtResource("8_66evp")
 
+[node name="TrashSpawnTimer" type="Timer" parent="trash_group"]
+wait_time = 4.0
+autostart = true
+
 [node name="AudioStreamPlayer" parent="." instance=ExtResource("7_qgm7s")]
 
 [node name="MoneyDisplay" type="CanvasLayer" parent="."]
@@ -142,3 +146,5 @@ script = ExtResource("8_oegoc")
 position = Vector2(604.25, 58)
 scale = Vector2(0.121777, 0.115288)
 texture = ExtResource("8_rkja5")
+
+[connection signal="timeout" from="trash_group/TrashSpawnTimer" to="trash_group" method="_on_TrashSpawnTimer_timeout"]
