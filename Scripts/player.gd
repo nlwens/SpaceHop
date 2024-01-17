@@ -3,7 +3,7 @@ extends RigidBody2D
 @export_node_path("Camera2D") var camera_path
 var jump_speed = 600
 var speed = 200
-var gravity = 10
+var gravity = 9
 var isAlive = true
 var deadzone_y = -1
 @export_node_path("CollisionShape2D") var feet

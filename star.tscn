@@ -28,5 +28,3 @@ sprite_frames = SubResource("SpriteFrames_y41rv")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(0.999999, 1)
 shape = SubResource("RectangleShape2D_du477")
-
-[node name="TouchTimer" type="Timer" parent="."]
