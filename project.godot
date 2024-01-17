@@ -17,8 +17,8 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-BgAudio="*res://scene/bg_audio.tscn"
 GameState="*res://GameState.gd"
+Global="*res://Scripts/global.gd"
 
 [display]
 
@@ -26,12 +26,6 @@ window/size/viewport_width=720
 window/size/viewport_height=1280
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
-
-[layer_names]
-
-2d_physics/layer_1="player"
-2d_physics/layer_2="platform"
-2d_physics/layer_3="fallzone"
 
 [rendering]
 

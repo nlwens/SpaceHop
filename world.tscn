@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cf1nfupcwuym" path="res://star.tscn" id="6_whv8f"]
 [ext_resource type="PackedScene" uid="uid://btr7i0mid10dh" path="res://scene/bg_audio.tscn" id="7_qgm7s"]
 [ext_resource type="Script" path="res://Scripts/trash_group.gd" id="8_66evp"]
+[ext_resource type="Script" path="res://Scripts/ScoreLabel.gd" id="8_oegoc"]
 [ext_resource type="Texture2D" uid="uid://b5koofacibdqd" path="res://coin.png" id="8_rkja5"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jiot4"]
@@ -40,8 +41,6 @@ size = Vector2(901, 111)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rrwmj"]
 size = Vector2(109, 1389)
 
-[sub_resource type="GDScript" id="GDScript_yjen5"]
-
 [sub_resource type="FontVariation" id="FontVariation_hwowv"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ibajg"]
@@ -71,19 +70,15 @@ script = ExtResource("6_mbc1w")
 
 [node name="tile" parent="tile_group" instance=ExtResource("6_m12om")]
 position = Vector2(3, 549)
-collision_layer = 3
 
 [node name="tile3" parent="tile_group/tile" instance=ExtResource("6_m12om")]
 position = Vector2(-226, -134)
-collision_layer = 2
 
 [node name="tile4" parent="tile_group/tile" instance=ExtResource("6_m12om")]
 position = Vector2(-64, -417)
-collision_layer = 2
 
 [node name="tile5" parent="tile_group/tile" instance=ExtResource("6_m12om")]
 position = Vector2(190, -234)
-collision_layer = 2
 
 [node name="Camera2D" type="Camera2D" parent="."]
 script = SubResource("GDScript_f3286")
@@ -100,20 +95,28 @@ shape = SubResource("RectangleShape2D_2325e")
 position = Vector2(0, 46)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D2"]
-position = Vector2(-531, -57)
+position = Vector2(-477, -49)
 shape = SubResource("RectangleShape2D_rrwmj")
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="Camera2D" groups=["deadzone"]]
 position = Vector2(834, 42)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D3"]
-position = Vector2(-306, -51)
+position = Vector2(-366, -69)
 shape = SubResource("RectangleShape2D_rrwmj")
-script = SubResource("GDScript_yjen5")
+
+[node name="StarsContainer" type="Node2D" parent="."]
+position = Vector2(3, 549)
+
+[node name="star" parent="StarsContainer" instance=ExtResource("6_whv8f")]
+position = Vector2(163, -333)
+
+[node name="star2" parent="StarsContainer" instance=ExtResource("6_whv8f")]
+position = Vector2(-192, -514)
 
 [node name="player" parent="." instance=ExtResource("1_78p7k")]
 texture_filter = 1
-position = Vector2(10, 436)
+position = Vector2(0, 381)
 camera_path = NodePath("../Camera2D")
 
 [node name="trash_group" type="Node2D" parent="."]
@@ -134,17 +137,9 @@ text = "0"
 label_settings = SubResource("LabelSettings_ibajg")
 horizontal_alignment = 1
 vertical_alignment = 1
+script = ExtResource("8_oegoc")
 
 [node name="Coin" type="Sprite2D" parent="MoneyDisplay"]
 position = Vector2(604.25, 58)
 scale = Vector2(0.121777, 0.115288)
 texture = ExtResource("8_rkja5")
-
-[node name="star" parent="." instance=ExtResource("6_whv8f")]
-position = Vector2(200, 236)
-
-[node name="star2" parent="." instance=ExtResource("6_whv8f")]
-position = Vector2(-70, 70)
-
-[node name="star3" parent="." instance=ExtResource("6_whv8f")]
-position = Vector2(-225, 351)

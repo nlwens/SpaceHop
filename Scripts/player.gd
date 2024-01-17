@@ -3,7 +3,7 @@ extends RigidBody2D
 @export_node_path("Camera2D") var camera_path
 var jump_speed = 600
 var speed = 200
-var gravity = 9
+var gravity = 10
 var isAlive = true
 var deadzone_y = -1
 @export_node_path("CollisionShape2D") var feet
@@ -37,10 +37,8 @@ func _process(delta):
 func _on_deadzone_enter():
 	# Action when entering the dead zone (fallen down)
 	isAlive = false
-	BgAudio.stop()
-	$Fail.play()
 	print("Entered the dead zone.")
-	#await get_tree().create_timer(2).timeout
+	await get_tree().create_timer(1).timeout
 	_reset_to_main_menu()
 	# Add any other actions or behavior when the character enters the dead zone here
 
@@ -62,4 +60,6 @@ func collision(body):
 func whole_body(body):
 	if body.is_in_group('deadzone'):
 		_on_deadzone_enter()
+	if body.is_in_group('star'):
+		Global.score += 10
 	pass # Replace with function body.

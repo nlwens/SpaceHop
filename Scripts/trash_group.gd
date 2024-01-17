@@ -14,12 +14,12 @@ func _ready():
 		var temp = randi_range(-1,1)
 		if trashtemp >=0:
 			var bottle_trash = bottle_trash.instantiate()
-			bottle_trash.set_position(Vector2((width/2+10)*temp,y))
+			bottle_trash.set_position(Vector2((width/2)*temp,y))
 			await get_tree().create_timer(2).timeout
 			add_child(bottle_trash)
 		else :
 			var banana_trash = banana_trash.instantiate()
-			banana_trash.set_position(Vector2((width/2+10)*temp,y))
+			banana_trash.set_position(Vector2((width/2)*temp,y))
 			await get_tree().create_timer(2).timeout
 			add_child(banana_trash)
 		y -= randf_range(300,550)

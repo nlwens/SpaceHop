@@ -1,7 +1,8 @@
-res://world.tscn
-res://bg.gdshader
+res://scene/banana_trash.tscn
 res://scene/space_trash.tscn
-res://star.tscn
 res://scene/player.tscn
-res://scene/tile_group.tscn
-res://main_menu.tscn
+res://scene/tile.tscn
+res://star.tscn
+res://star.gd
+res://scene/CollisionShape2D.gd
+res://Scripts/player.gd

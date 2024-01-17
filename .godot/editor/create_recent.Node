@@ -1,9 +1,9 @@
 CollisionShape2D
+StaticBody2D
 CanvasLayer
 AudioStreamPlayer2D
 Control
 Label
-StaticBody2D
 Sprite2D
 Button
 ParallaxLayer

@@ -17,14 +17,17 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_du477"]
 size = Vector2(46.5, 56)
 
-[node name="star" type="Area2D"]
+[node name="star" type="StaticBody2D" groups=["star"]]
 script = ExtResource("1_keoib")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-7.62939e-06, 0)
-scale = Vector2(-2.27231, 2.86946)
+rotation = -3.14159
+scale = Vector2(2.27231, -2.86946)
 sprite_frames = SubResource("SpriteFrames_y41rv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(0.999999, 1)
 shape = SubResource("RectangleShape2D_du477")
+
+[node name="TouchTimer" type="Timer" parent="."]
