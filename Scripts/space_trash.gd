@@ -3,7 +3,7 @@ extends StaticBody2D
 
 var direction = Vector2.RIGHT
 var velocity = Vector2.ZERO
-var speed = 100
+var speed = 60
 var width : float
 
 func _ready():

@@ -1,31 +1,29 @@
 extends Node2D
 
-var bottle_trash = preload("res://scene/Space_trash.tscn")
-var banana_trash = preload("res://scene/banana_trash.tscn")
+var bottle_trash_scene = preload("res://scene/Space_trash.tscn")
+var banana_trash_scene = preload("res://scene/banana_trash.tscn")
 var width = get_viewport_rect().size.x
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	width = get_viewport().get_visible_rect().size.x
 	randomize()
-	var y = 0
-	while y > -300000:
-		var trashtemp = randi_range(-1,1)
-		var temp = randi_range(-1,1)
-		if trashtemp >=0:
-			var bottle_trash = bottle_trash.instantiate()
-			bottle_trash.set_position(Vector2((width/2)*temp,y))
-			await get_tree().create_timer(2).timeout
-			add_child(bottle_trash)
-		else :
-			var banana_trash = banana_trash.instantiate()
-			banana_trash.set_position(Vector2((width/2)*temp,y))
-			await get_tree().create_timer(2).timeout
-			add_child(banana_trash)
-		y -= randf_range(300,550)
-		prints(y)
-	pass # Replace with function body.
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func _on_TrashSpawnTimer_timeout():
+	var camera_position = get_node("/root/world/Camera2D").global_position  # Adjust the path
+	var y_spawn_offset = 800  # Offset for spawning above the camera. Adjust as needed.
+	var y = camera_position.y - y_spawn_offset
+
+	var position_x = randf_range(-width , width )  # Random X position within the viewport width
+
+	var trash_type = randi() % 2  # Randomly choose between 0 and 1
+	var trash_instance
+
+	if trash_type == 0:
+		trash_instance = bottle_trash_scene.instantiate()
+	else:
+		trash_instance = banana_trash_scene.instantiate()
+
+	trash_instance.set_position(Vector2(position_x, y))
+	add_child(trash_instance)
+
+	print("Spawning trash at: ", Vector2(position_x, y))
