@@ -18,7 +18,6 @@ config/icon="res://icon.svg"
 [autoload]
 
 BgAudio="*res://scene/bg_audio.tscn"
-GameState="*res://GameState.gd"
 
 [display]
 

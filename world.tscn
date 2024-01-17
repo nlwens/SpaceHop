@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://xg605m843gih"]
+[gd_scene load_steps=14 format=3 uid="uid://xg605m843gih"]
 
 [ext_resource type="PackedScene" uid="uid://dxnhmxms0na4b" path="res://scene/player.tscn" id="1_78p7k"]
 [ext_resource type="PackedScene" uid="uid://gyxkvptqdu2q" path="res://scene/tile_group.tscn" id="5_d3tqu"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://cf1nfupcwuym" path="res://star.tscn" id="6_whv8f"]
 [ext_resource type="PackedScene" uid="uid://btr7i0mid10dh" path="res://scene/bg_audio.tscn" id="7_qgm7s"]
 [ext_resource type="Script" path="res://Scripts/trash_group.gd" id="8_66evp"]
-[ext_resource type="Texture2D" uid="uid://b5koofacibdqd" path="res://coin.png" id="8_rkja5"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jiot4"]
 load_path = "res://.godot/imported/background.jpg-b3e230b91105fdc212a16aa687ae4a4e.ctex"
@@ -122,22 +121,14 @@ camera_path = NodePath("../Camera2D")
 position = Vector2(23, -349)
 script = ExtResource("8_66evp")
 
-[node name="AudioStreamPlayer" parent="." instance=ExtResource("7_qgm7s")]
-
-[node name="MoneyDisplay" type="CanvasLayer" parent="."]
-
-[node name="ScoreLabel" type="Label" parent="MoneyDisplay"]
-texture_filter = 1
-offset_left = 622.0
-offset_top = 35.0
-offset_right = 707.0
-offset_bottom = 80.0
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 263.0
+offset_top = -609.0
+offset_right = 348.0
+offset_bottom = -564.0
 text = "0"
 label_settings = SubResource("LabelSettings_ibajg")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Coin" type="Sprite2D" parent="MoneyDisplay"]
-position = Vector2(604.25, 58)
-scale = Vector2(0.121777, 0.115288)
-texture = ExtResource("8_rkja5")
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("7_qgm7s")]
