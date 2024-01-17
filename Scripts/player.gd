@@ -3,8 +3,15 @@ extends RigidBody2D
 
 var jump_speed = 600
 var speed = 200
+<<<<<<< Updated upstream
 var camera
 
+=======
+var gravity = 9
+var isAlive = true
+var deadzone_y = -1
+@export_node_path("CollisionShape2D") var feet
+>>>>>>> Stashed changes
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	set_process(true)
@@ -24,6 +31,7 @@ func _process(delta):
 
 func collision(body):	
 	if body.is_in_group('deadzone'):
+<<<<<<< Updated upstream
 		$Fail.play()
 	pass
 	
@@ -31,3 +39,10 @@ func collision(body):
 		$Jump.play()
 		set_linear_velocity(Vector2(0,-jump_speed))
 	pass
+=======
+		_on_deadzone_enter()
+	pass # Replace with function body.
+
+
+
+>>>>>>> Stashed changes

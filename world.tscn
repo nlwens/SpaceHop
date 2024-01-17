@@ -69,6 +69,7 @@ position = Vector2(834, 42)
 position = Vector2(-418, 12.5)
 shape = SubResource("RectangleShape2D_rrwmj")
 
+<<<<<<< Updated upstream
 [node name="tile" parent="." instance=ExtResource("2_lij5i")]
 position = Vector2(3, 549)
 
@@ -80,10 +81,17 @@ position = Vector2(-226, -134)
 
 [node name="tile4" parent="tile" instance=ExtResource("2_lij5i")]
 position = Vector2(149, -417)
+=======
+[node name="player" parent="." instance=ExtResource("1_78p7k")]
+texture_filter = 1
+position = Vector2(0, 381)
+camera_path = NodePath("../Camera2D")
+>>>>>>> Stashed changes
 
 [node name="tile6" parent="tile" instance=ExtResource("4_46774")]
 position = Vector2(-72, -308)
 
+<<<<<<< Updated upstream
 [node name="tile5" parent="tile" instance=ExtResource("2_lij5i")]
 position = Vector2(190, -234)
 
@@ -100,3 +108,17 @@ offset_right = 576.0
 offset_bottom = 875.0
 texture = ExtResource("3_yw41x")
 stretch_mode = 1
+=======
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 263.0
+offset_top = -609.0
+offset_right = 348.0
+offset_bottom = -564.0
+text = "0"
+label_settings = SubResource("LabelSettings_ibajg")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="star" parent="." instance=ExtResource("6_whv8f")]
+position = Vector2(-241, 339)
+>>>>>>> Stashed changes

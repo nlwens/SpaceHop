@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 Control
 Button
 Label
@@ -10,3 +11,14 @@ CanvasLayer
 TextureRect
 Node
 HBoxContainer
+=======
+CollisionShape2D
+CharacterBody2D
+CollisionPolygon2D
+AnimatedSprite2D
+Area2D
+Sprite2D
+ParallaxLayer
+ParallaxBackground
+ShapeCast2D
+>>>>>>> Stashed changes

@@ -1,2 +1,12 @@
+<<<<<<< Updated upstream
 res://main_menu.tscn
 res://world.tscn
+=======
+res://star.gd
+res://star.tscn
+res://bg.gdshader
+res://world.tscn
+res://scene/space_trash.tscn
+res://scene/player.tscn
+res://Scripts/player.gd
+>>>>>>> Stashed changes

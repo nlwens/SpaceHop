@@ -6,20 +6,41 @@
 [ext_resource type="AudioStream" uid="uid://cxohlcimog4xn" path="res://SoundEffects/Fail.wav" id="4_htmhy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i2nd5"]
+<<<<<<< Updated upstream:player.tscn
 size = Vector2(45, 16)
+=======
+size = Vector2(62.2887, 13.1107)
+>>>>>>> Stashed changes:scene/player.tscn
 
 [node name="player" type="RigidBody2D"]
+collision_layer = 3
+can_sleep = false
+lock_rotation = true
+freeze_mode = 1
 script = ExtResource("1_avpqq")
 
+<<<<<<< Updated upstream:player.tscn
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(14, 56)
 scale = Vector2(3.23, 3)
 texture = ExtResource("1_8k6jc")
+=======
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2(76.4066, -46.0818)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(-84.9165, 14.8746)
+shape = SubResource("RectangleShape2D_nyl47")
+>>>>>>> Stashed changes:scene/player.tscn
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+<<<<<<< Updated upstream:player.tscn
 position = Vector2(-1, 46)
+=======
+position = Vector2(-9.64435, 41.4447)
+>>>>>>> Stashed changes:scene/player.tscn
 shape = SubResource("RectangleShape2D_i2nd5")
 
 [node name="Jump" type="AudioStreamPlayer2D" parent="."]
@@ -30,4 +51,13 @@ volume_db = -10.0
 stream = ExtResource("4_htmhy")
 volume_db = -20.0
 
+<<<<<<< Updated upstream:player.tscn
+=======
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(14, 56)
+scale = Vector2(5, 4.644)
+texture = ExtResource("1_8k6jc")
+
+[connection signal="body_entered" from="Area2D2" to="." method="whole_body"]
+>>>>>>> Stashed changes:scene/player.tscn
 [connection signal="body_entered" from="Area2D" to="." method="collision"]
