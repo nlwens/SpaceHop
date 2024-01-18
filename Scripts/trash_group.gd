@@ -18,7 +18,7 @@ func _on_TrashSpawnTimer_timeout():
 
 	var position_x = randf_range(-width , width )  # Random X position within the viewport width
 
-	var trash_type = randi() % 4  # Randomly choose between 0 and 1
+	var trash_type = randi() % 5  # Randomly choose between 0 and 1
 	var trash_instance
 
 	if trash_type == 0:
