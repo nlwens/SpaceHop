@@ -107,10 +107,12 @@ position = Vector2(-366, -69)
 shape = SubResource("RectangleShape2D_rrwmj")
 
 [node name="StarsContainer" type="Node2D" parent="."]
+texture_filter = 1
 position = Vector2(3, 549)
 script = ExtResource("4_i7dug")
 
 [node name="star" parent="StarsContainer" instance=ExtResource("6_whv8f")]
+texture_filter = 1
 position = Vector2(163, -333)
 
 [node name="player" parent="." instance=ExtResource("1_78p7k")]

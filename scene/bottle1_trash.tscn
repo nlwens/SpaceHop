@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxibrr7sxo4ip"]
+
+[ext_resource type="Script" path="res://Scripts/banana_trash.gd" id="1_g4ipp"]
+[ext_resource type="Texture2D" uid="uid://cpvgx31x63hl8" path="res://P.I.G/bottle-trash.png" id="2_h7isr"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nioo2"]
+radius = 14.0
+height = 56.0
+
+[node name="StaticBody2D" type="StaticBody2D" groups=["deadzone"]]
+script = ExtResource("1_g4ipp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(36.25, 29.25)
+scale = Vector2(1.815, 1.655)
+texture = ExtResource("2_h7isr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(25, 39)
+shape = SubResource("CapsuleShape2D_nioo2")

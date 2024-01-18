@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://wnhtxeem7fer"]
+
+[ext_resource type="Script" path="res://Scripts/banana_trash.gd" id="1_s3dke"]
+[ext_resource type="Texture2D" uid="uid://dfcfky3mypg6t" path="res://P.I.G/can-trash.png" id="2_jtxs1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vkoil"]
+size = Vector2(72, 39)
+
+[node name="StaticBody2D" type="StaticBody2D" groups=["deadzone"]]
+script = ExtResource("1_s3dke")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(39, 26.5)
+scale = Vector2(1.78, 1.53)
+texture = ExtResource("2_jtxs1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(22, 22.5)
+shape = SubResource("RectangleShape2D_vkoil")
