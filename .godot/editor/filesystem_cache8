@@ -1,10 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1705926055
+::res://::1705927197
 coin.png::CompressedTexture2D::4513605072106424951::1705594919::1705594919::1::::<><>::
 GameState.gd::GDScript::-1::1705594919::0::1::::<>Node2D<>::
 icon.svg::CompressedTexture2D::952823857060801387::1705325607::1705925956::1::::<><>::
-main_menu.tscn::PackedScene::285133182844743066::1705594919::0::1::::<><>::uid://btr7i0mid10dh::::res://scene/bg_audio.tscn<>uid://chad0b35pilne::::res://P.I.G/background.jpg<>res://Scripts/CanvasLayer.gd
-shop.tscn::PackedScene::8139155270721537469::1705594919::0::1::::<><>::uid://chad0b35pilne::::res://P.I.G/background.jpg<>res://shop/ExitButton.gd<>uid://cqvsm2j786xpm::::res://P.I.G/s.1.PNG<>uid://cy4552kjmen5::::res://P.I.G/s.2.PNG<>res://shop/PurchaseButton.gd
+main_menu.tscn::PackedScene::285133182844743066::1705927197::0::1::::<><>::uid://btr7i0mid10dh::::res://scene/bg_audio.tscn<>uid://chad0b35pilne::::res://P.I.G/background.jpg<>res://Scripts/CanvasLayer.gd<>res://Scripts/ScoreLabel.gd<>uid://b5koofacibdqd::::res://coin.png
+shop.tscn::PackedScene::8139155270721537469::1705927197::0::1::::<><>::uid://chad0b35pilne::::res://P.I.G/background.jpg<>res://shop/ExitButton.gd<>uid://cqvsm2j786xpm::::res://P.I.G/s.1.PNG<>uid://cy4552kjmen5::::res://P.I.G/s.2.PNG<>res://shop/PurchaseButton.gd
 SignalManager.gd::GDScript::-1::1705594919::0::1::::<>Node2D<>::
 signal_manager.tscn::PackedScene::4797376803619640458::1705594919::0::1::::<><>::res://SignalManager.gd
 world.tscn::PackedScene::1628658137599874047::1705926055::0::1::::<><>::uid://dxnhmxms0na4b::::res://scene/player.tscn<>res://Scripts/StarsContainer.gd<>uid://gyxkvptqdu2q::::res://scene/tile_group.tscn<>uid://870qupft0mqa::::res://scene/tile.tscn<>res://Scripts/tile_group.gd<>uid://cf1nfupcwuym::::res://scene/star.tscn<>uid://btr7i0mid10dh::::res://scene/bg_audio.tscn<>res://Scripts/trash_group.gd<>res://Scripts/ScoreLabel.gd<>uid://b5koofacibdqd::::res://coin.png
@@ -53,10 +53,10 @@ StarsContainer.gd::GDScript::-1::1705594919::0::1::::<>Node2D<>::
 tile_group.gd::GDScript::-1::1705594919::0::1::::<>Node2D<>::
 trash_group.gd::GDScript::-1::1705596562::0::1::::<>Node2D<>::
 world.gd::GDScript::-1::1705594919::0::1::::<>Node2D<>::
-::res://shop/::1705926055
+::res://shop/::1705927196
 ExitButton.gd::GDScript::-1::1705594919::0::1::::<>Button<>::
-PurchaseButton.gd::GDScript::-1::1705594919::0::1::::<>Button<>::
-shop.tscn::PackedScene::9186845441468200424::1705926055::0::1::::<><>::uid://dn7wx0cu1koxh::::res://shop.tscn<>res://Scripts/ScoreLabel.gd<>uid://btr7i0mid10dh::::res://scene/bg_audio.tscn<>uid://b5koofacibdqd::::res://coin.png
+PurchaseButton.gd::GDScript::-1::1705927196::0::1::::<>Button<>::
+shop.tscn::PackedScene::9186845441468200424::1705926079::0::1::::<><>::uid://dn7wx0cu1koxh::::res://shop.tscn<>res://Scripts/ScoreLabel.gd<>uid://btr7i0mid10dh::::res://scene/bg_audio.tscn<>uid://b5koofacibdqd::::res://coin.png
 ::res://SoundEffects/::1705594919
 bg_audio.mp3::AudioStreamMP3::8065382280021672535::1705594919::1705594919::1::::<><>::
 Fail.wav::AudioStreamWAV::6416530840269442463::1705325607::1705325607::1::::<><>::

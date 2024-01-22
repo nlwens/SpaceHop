@@ -1,8 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://ecedp0vfnmny"]
+[gd_scene load_steps=8 format=3 uid="uid://ecedp0vfnmny"]
 
 [ext_resource type="PackedScene" uid="uid://btr7i0mid10dh" path="res://scene/bg_audio.tscn" id="2_8hgqc"]
 [ext_resource type="Texture2D" uid="uid://chad0b35pilne" path="res://P.I.G/background.jpg" id="2_hdk2m"]
 [ext_resource type="Script" path="res://Scripts/CanvasLayer.gd" id="2_knwgp"]
+[ext_resource type="Script" path="res://Scripts/ScoreLabel.gd" id="4_6m22j"]
+[ext_resource type="Texture2D" uid="uid://b5koofacibdqd" path="res://coin.png" id="5_ak3f7"]
+
+[sub_resource type="FontVariation" id="FontVariation_hwowv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sfdg3"]
+font = SubResource("FontVariation_hwowv")
+font_size = 32
+font_color = Color(1, 1, 1, 0.933333)
 
 [node name="MainMenu" type="Node"]
 
@@ -163,6 +172,25 @@ text = "Back"
 position = Vector2(518.75, 641)
 scale = Vector2(1.14944, 0.79875)
 texture = ExtResource("2_hdk2m")
+
+[node name="MoneyDisplay" type="CanvasLayer" parent="."]
+
+[node name="ScoreLabel" type="Label" parent="MoneyDisplay"]
+texture_filter = 1
+offset_left = 622.0
+offset_top = 35.0
+offset_right = 707.0
+offset_bottom = 80.0
+text = "0"
+label_settings = SubResource("LabelSettings_sfdg3")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_6m22j")
+
+[node name="Coin" type="Sprite2D" parent="MoneyDisplay"]
+position = Vector2(604.25, 58)
+scale = Vector2(0.121777, 0.115288)
+texture = ExtResource("5_ak3f7")
 
 [connection signal="pressed" from="CanvasLayer/Main/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonPlay" to="CanvasLayer" method="_on_button_play_pressed"]
 [connection signal="pressed" from="CanvasLayer/Main/CenterContainer/PanelContainer/MarginContainer/VBoxContainer/ButtonShop" to="CanvasLayer" method="_on_button_shop_pressed"]

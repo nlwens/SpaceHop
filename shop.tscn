@@ -169,3 +169,5 @@ icon_alignment = 1
 script = ExtResource("5_qssjh")
 
 [connection signal="pressed" from="Exit" to="Exit" method="_on_pressed"]
+[connection signal="pressed" from="Purchase1" to="Purchase1" method="_on_purchase1_pressed"]
+[connection signal="pressed" from="Purchase2" to="Purchase2" method="_on_purchase2_pressed"]
