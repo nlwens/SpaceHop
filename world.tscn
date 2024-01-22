@@ -42,10 +42,10 @@ size = Vector2(901, 111)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rrwmj"]
 size = Vector2(109, 1389)
 
-[sub_resource type="FontVariation" id="FontVariation_hwowv"]
+[sub_resource type="FontVariation" id="FontVariation_pme36"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ibajg"]
-font = SubResource("FontVariation_hwowv")
+font = SubResource("FontVariation_pme36")
 font_size = 32
 font_color = Color(1, 1, 1, 0.933333)
 
