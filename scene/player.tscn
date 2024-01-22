@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://dxnhmxms0na4b"]
+[gd_scene load_steps=9 format=3 uid="uid://dxnhmxms0na4b"]
 
 [ext_resource type="Texture2D" uid="uid://c72n4p4pkf66a" path="res://P.I.G/pixil-frame-0.png" id="1_8k6jc"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_avpqq"]
 [ext_resource type="AudioStream" uid="uid://d2hmgdlggejkx" path="res://SoundEffects/Jump.wav" id="3_40s1n"]
+[ext_resource type="Script" path="res://scene/Sprite2D.gd" id="3_q3d6h"]
 [ext_resource type="AudioStream" uid="uid://cxohlcimog4xn" path="res://SoundEffects/Fail.wav" id="4_htmhy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5fmms"]
@@ -34,6 +35,7 @@ shape = SubResource("RectangleShape2D_nyl47")
 position = Vector2(14, 56)
 scale = Vector2(5, 4.644)
 texture = ExtResource("1_8k6jc")
+script = ExtResource("3_q3d6h")
 
 [node name="Area2D" type="Area2D" parent="."]
 

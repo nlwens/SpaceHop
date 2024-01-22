@@ -14,6 +14,7 @@ func _process(delta):
 func _on_purchase_1_pressed():
 	if Global.score >= 30:
 		Global.score -= 30
+		Global.playernum = 1
 	
 	else:
 		Failed.visible = true
@@ -26,6 +27,7 @@ func _on_purchase_1_pressed():
 func _on_purchase_2_pressed():
 	if Global.score >= 30:
 		Global.score -= 30
+		Global.playernum = 2
 	
 	else:
 		Failed.visible = true

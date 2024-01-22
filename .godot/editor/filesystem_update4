@@ -9,3 +9,6 @@ res://shop/PurchaseButton.gd
 res://shop.tscn
 res://scene/deadscene.tscn
 res://shop/shop.gd
+res://scene/player.tscn
+res://Scripts/global.gd
+res://scene/Sprite2D.gd
