@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://dr1aelj5m7go7"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_80cx3"]
+font_size = 48
+outline_color = Color(0.835294, 0, 0, 1)
+
+[node name="failed_purchase" type="Panel"]
+offset_left = 195.0
+offset_top = 402.0
+offset_right = 707.0
+offset_bottom = 870.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 160.0
+offset_right = 441.0
+offset_bottom = 297.0
+text = "You don't have 
+enough money!"
+label_settings = SubResource("LabelSettings_80cx3")

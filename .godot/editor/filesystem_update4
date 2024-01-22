@@ -7,3 +7,5 @@ res://scene/apple_trash.tscn
 res://main_menu.tscn
 res://shop/PurchaseButton.gd
 res://shop.tscn
+res://scene/deadscene.tscn
+res://shop/shop.gd

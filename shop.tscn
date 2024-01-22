@@ -1,10 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://dn7wx0cu1koxh"]
+[gd_scene load_steps=13 format=3 uid="uid://dn7wx0cu1koxh"]
 
 [ext_resource type="Texture2D" uid="uid://chad0b35pilne" path="res://P.I.G/background.jpg" id="1_60c3l"]
+[ext_resource type="Script" path="res://shop/shop.gd" id="1_qj0t0"]
 [ext_resource type="Script" path="res://shop/ExitButton.gd" id="2_swsxj"]
 [ext_resource type="Texture2D" uid="uid://cqvsm2j786xpm" path="res://P.I.G/s.1.PNG" id="3_0mp4f"]
 [ext_resource type="Texture2D" uid="uid://cy4552kjmen5" path="res://P.I.G/s.2.PNG" id="4_7yey5"]
-[ext_resource type="Script" path="res://shop/PurchaseButton.gd" id="5_qssjh"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4p6cn"]
 bg_color = Color(0.294118, 0.352941, 0.682353, 0.588235)
@@ -60,11 +60,16 @@ corner_radius_top_right = 12
 corner_radius_bottom_right = 12
 corner_radius_bottom_left = 12
 
+[sub_resource type="LabelSettings" id="LabelSettings_issps"]
+font_size = 48
+outline_color = Color(0.835294, 0, 0, 1)
+
 [node name="shop" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_qj0t0")
 
 [node name="SpaceBG" type="Sprite2D" parent="."]
 position = Vector2(518.75, 641)
@@ -154,7 +159,6 @@ theme_override_font_sizes/font_size = 27
 theme_override_styles/normal = SubResource("StyleBoxFlat_vydvl")
 text = "Purchase"
 icon_alignment = 1
-script = ExtResource("5_qssjh")
 
 [node name="Purchase2" type="Button" parent="."]
 layout_mode = 0
@@ -166,8 +170,29 @@ theme_override_font_sizes/font_size = 27
 theme_override_styles/normal = SubResource("StyleBoxFlat_vydvl")
 text = "Purchase"
 icon_alignment = 1
-script = ExtResource("5_qssjh")
+
+[node name="Failed" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Failed"]
+layout_mode = 0
+offset_left = 193.0
+offset_top = 366.0
+offset_right = 692.0
+offset_bottom = 906.0
+
+[node name="Label" type="Label" parent="Failed/Panel"]
+offset_left = 76.0
+offset_top = 208.0
+offset_right = 434.0
+offset_bottom = 345.0
+text = "You don't have 
+enough money!"
+label_settings = SubResource("LabelSettings_issps")
 
 [connection signal="pressed" from="Exit" to="Exit" method="_on_pressed"]
-[connection signal="pressed" from="Purchase1" to="Purchase1" method="_on_purchase1_pressed"]
-[connection signal="pressed" from="Purchase2" to="Purchase2" method="_on_purchase2_pressed"]
+[connection signal="pressed" from="Purchase1" to="." method="_on_purchase_1_pressed"]
+[connection signal="pressed" from="Purchase2" to="." method="_on_purchase_2_pressed"]
