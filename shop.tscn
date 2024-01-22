@@ -1,6 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://dn7wx0cu1koxh"]
 
 [ext_resource type="Texture2D" uid="uid://chad0b35pilne" path="res://P.I.G/background.jpg" id="1_60c3l"]
+[ext_resource type="FontFile" uid="uid://b2hdbd13qdmqq" path="res://TherenRegular-2Oevd.otf" id="2_ojkig"]
 [ext_resource type="Script" path="res://shop/ExitButton.gd" id="2_swsxj"]
 [ext_resource type="Texture2D" uid="uid://cqvsm2j786xpm" path="res://P.I.G/s.1.PNG" id="3_0mp4f"]
 [ext_resource type="Texture2D" uid="uid://cy4552kjmen5" path="res://P.I.G/s.2.PNG" id="4_7yey5"]
@@ -31,8 +32,6 @@ corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
-
-[sub_resource type="FontVariation" id="FontVariation_66hmt"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yilyb"]
 bg_color = Color(0.2, 0.337255, 0.52549, 0.709804)
@@ -73,36 +72,36 @@ texture = ExtResource("1_60c3l")
 
 [node name="BG" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 138.0
-offset_top = 196.0
-offset_right = 730.0
-offset_bottom = 1088.0
+offset_left = 251.0
+offset_top = 187.0
+offset_right = 843.0
+offset_bottom = 1079.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_4p6cn")
 
 [node name="PurchaseBG1" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 234.0
-offset_top = 390.0
-offset_right = 650.0
-offset_bottom = 598.0
+offset_left = 350.0
+offset_top = 376.0
+offset_right = 766.0
+offset_bottom = 584.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_opam6")
 
 [node name="PurchaseBG2" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 239.0
+offset_left = 352.0
 offset_top = 663.0
-offset_right = 655.0
+offset_right = 768.0
 offset_bottom = 871.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_opam6")
 
 [node name="Exit" type="Button" parent="."]
 texture_filter = 2
 layout_mode = 0
-offset_left = 518.0
-offset_top = 222.0
-offset_right = 624.0
-offset_bottom = 265.0
-theme_override_fonts/font = SubResource("FontVariation_66hmt")
+offset_left = 708.0
+offset_top = 211.0
+offset_right = 814.0
+offset_bottom = 254.0
+theme_override_fonts/font = ExtResource("2_ojkig")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_yilyb")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_din7k")
@@ -111,21 +110,21 @@ icon_alignment = 1
 script = ExtResource("2_swsxj")
 
 [node name="NewChar1" type="Sprite2D" parent="."]
-position = Vector2(329, 493)
+position = Vector2(437, 487)
 scale = Vector2(0.334223, 0.317844)
 texture = ExtResource("3_0mp4f")
 
 [node name="NewChar2" type="Sprite2D" parent="."]
-position = Vector2(334, 771)
+position = Vector2(438, 768)
 scale = Vector2(0.329468, 0.315597)
 texture = ExtResource("4_7yey5")
 
 [node name="Cost1" type="Label" parent="."]
 layout_mode = 0
-offset_left = 425.0
-offset_top = 441.0
-offset_right = 609.0
-offset_bottom = 497.0
+offset_left = 513.0
+offset_top = 435.0
+offset_right = 697.0
+offset_bottom = 491.0
 theme_override_font_sizes/font_size = 30
 text = "Cost: 300"
 horizontal_alignment = 1
@@ -134,9 +133,9 @@ autowrap_mode = 3
 
 [node name="Cost2" type="Label" parent="."]
 layout_mode = 0
-offset_left = 425.0
+offset_left = 524.0
 offset_top = 712.0
-offset_right = 609.0
+offset_right = 708.0
 offset_bottom = 768.0
 theme_override_font_sizes/font_size = 30
 text = "Cost: 300"
@@ -146,10 +145,10 @@ autowrap_mode = 3
 
 [node name="Purchase1" type="Button" parent="."]
 layout_mode = 0
-offset_left = 435.0
-offset_top = 502.0
-offset_right = 611.0
-offset_bottom = 551.0
+offset_left = 528.0
+offset_top = 500.0
+offset_right = 704.0
+offset_bottom = 549.0
 theme_override_font_sizes/font_size = 27
 theme_override_styles/normal = SubResource("StyleBoxFlat_vydvl")
 text = "Purchase"
@@ -158,10 +157,10 @@ script = ExtResource("5_qssjh")
 
 [node name="Purchase2" type="Button" parent="."]
 layout_mode = 0
-offset_left = 430.0
-offset_top = 779.0
-offset_right = 606.0
-offset_bottom = 828.0
+offset_left = 535.0
+offset_top = 787.0
+offset_right = 711.0
+offset_bottom = 836.0
 theme_override_font_sizes/font_size = 27
 theme_override_styles/normal = SubResource("StyleBoxFlat_vydvl")
 text = "Purchase"

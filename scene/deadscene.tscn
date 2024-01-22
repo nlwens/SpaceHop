@@ -1,8 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://tdhgmeaf861o"]
+[gd_scene load_steps=10 format=3 uid="uid://tdhgmeaf861o"]
 
 [ext_resource type="Texture2D" uid="uid://chad0b35pilne" path="res://P.I.G/background.jpg" id="1_mef0t"]
 [ext_resource type="Script" path="res://shop/ExitButton.gd" id="2_44jej"]
+[ext_resource type="FontFile" uid="uid://b2hdbd13qdmqq" path="res://TherenRegular-2Oevd.otf" id="2_bfme7"]
 [ext_resource type="AudioStream" uid="uid://cxohlcimog4xn" path="res://SoundEffects/Fail.wav" id="3_abtr3"]
+[ext_resource type="Texture2D" uid="uid://vhgn7kxe7px" path="res://a.png" id="4_k75h2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u2moq"]
 bg_color = Color(0.294118, 0.352941, 0.682353, 0.588235)
@@ -22,8 +24,6 @@ font_size = 76
 font_color = Color(1, 0, 0, 1)
 shadow_size = 10
 shadow_color = Color(0, 0, 1, 1)
-
-[sub_resource type="FontVariation" id="FontVariation_okgc8"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bhagr"]
 bg_color = Color(0.2, 0.337255, 0.52549, 0.709804)
@@ -52,29 +52,30 @@ texture = ExtResource("1_mef0t")
 
 [node name="BG" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 126.0
+offset_left = 188.0
 offset_top = 298.0
-offset_right = 628.0
+offset_right = 746.0
 offset_bottom = 998.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_u2moq")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 196.0
-offset_top = 470.0
-offset_right = 566.0
-offset_bottom = 575.0
-text = "U R DEAD!"
+offset_left = 194.0
+offset_top = 574.0
+offset_right = 836.0
+offset_bottom = 679.0
+theme_override_fonts/font = ExtResource("2_bfme7")
+text = "You are dead "
 label_settings = SubResource("LabelSettings_uf8i3")
 
 [node name="Exit" type="Button" parent="."]
 texture_filter = 2
 layout_mode = 0
-offset_left = 240.0
-offset_top = 694.0
-offset_right = 513.0
-offset_bottom = 737.0
-theme_override_fonts/font = SubResource("FontVariation_okgc8")
+offset_left = 334.0
+offset_top = 724.0
+offset_right = 607.0
+offset_bottom = 819.0
+theme_override_fonts/font = ExtResource("2_bfme7")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_bhagr")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_tuyog")
@@ -85,5 +86,10 @@ script = ExtResource("2_44jej")
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_abtr3")
 autoplay = true
+
+[node name="A" type="Sprite2D" parent="."]
+position = Vector2(608, 415)
+scale = Vector2(0.2275, 0.23)
+texture = ExtResource("4_k75h2")
 
 [connection signal="pressed" from="Exit" to="Exit" method="_on_pressed"]
