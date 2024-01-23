@@ -52,18 +52,18 @@ texture = ExtResource("1_mef0t")
 
 [node name="BG" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 188.0
-offset_top = 298.0
-offset_right = 746.0
-offset_bottom = 998.0
+offset_left = 74.0
+offset_top = 274.0
+offset_right = 649.0
+offset_bottom = 974.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_u2moq")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 194.0
-offset_top = 574.0
-offset_right = 836.0
-offset_bottom = 679.0
+offset_left = 88.0
+offset_top = 600.0
+offset_right = 641.0
+offset_bottom = 705.0
 theme_override_fonts/font = ExtResource("2_bfme7")
 text = "You are dead "
 label_settings = SubResource("LabelSettings_uf8i3")
@@ -71,10 +71,10 @@ label_settings = SubResource("LabelSettings_uf8i3")
 [node name="Exit" type="Button" parent="."]
 texture_filter = 2
 layout_mode = 0
-offset_left = 334.0
-offset_top = 724.0
-offset_right = 607.0
-offset_bottom = 819.0
+offset_left = 224.0
+offset_top = 752.0
+offset_right = 505.0
+offset_bottom = 847.0
 theme_override_fonts/font = ExtResource("2_bfme7")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_bhagr")
@@ -88,7 +88,7 @@ stream = ExtResource("3_abtr3")
 autoplay = true
 
 [node name="A" type="Sprite2D" parent="."]
-position = Vector2(608, 415)
+position = Vector2(360, 448)
 scale = Vector2(0.2275, 0.23)
 texture = ExtResource("4_k75h2")
 
