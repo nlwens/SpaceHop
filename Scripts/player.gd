@@ -12,6 +12,7 @@ var deadzone_y = -1
 func _ready():
 	set_process(true)
 
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if isAlive:
@@ -54,8 +55,17 @@ func collision(body):
 	if body.is_in_group('paddles') and get_linear_velocity().y > 0 and isAlive:
 		$Jump.play()
 		set_linear_velocity(Vector2(0, -jump_speed))
+	elif body.is_in_group('banana_trash') and isAlive:
+		$HitBanana.play()
+	elif body.is_in_group('bottle_trash') and isAlive:
+		$HitBottle.play()
+	elif body.is_in_group('apple_trash') and isAlive:
+		$HitApple.play()
+	elif body.is_in_group('bottle1_trash') and isAlive:
+		$HitBottle1.play()
+	elif body.is_in_group('can_trash') and isAlive:
+		$HitCan.play()
 	pass
-
 
 func whole_body(body):
 	if body.is_in_group('deadzone'):

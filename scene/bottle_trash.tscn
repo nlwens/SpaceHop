@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dt077mwrbimra"]
+[gd_scene load_steps=5 format=3 uid="uid://dt077mwrbimra"]
 
-[ext_resource type="Script" path="res://Scripts/space_trash.gd" id="1_yymtg"]
+[ext_resource type="Script" path="res://Scripts/bottle_trash.gd" id="1_7u1ks"]
 [ext_resource type="Texture2D" uid="uid://bcfv116170jtw" path="res://P.I.G/juice-trash.png" id="2_q2u3g"]
+[ext_resource type="AudioStream" uid="uid://p4x2m2ysc4fx" path="res://SoundEffects/trash1.wav" id="3_5rkqf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fn7cs"]
 size = Vector2(55, 58)
@@ -9,7 +10,7 @@ size = Vector2(55, 58)
 [node name="SpaceTrash" type="StaticBody2D" groups=["deadzone"]]
 texture_filter = 1
 position = Vector2(0, 1)
-script = ExtResource("1_yymtg")
+script = ExtResource("1_7u1ks")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(26, -13)
@@ -19,3 +20,7 @@ texture = ExtResource("2_q2u3g")
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2(-2, -2)
 shape = SubResource("RectangleShape2D_fn7cs")
+
+[node name="HitBottle" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_5rkqf")
+volume_db = 10.0

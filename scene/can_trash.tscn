@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://wnhtxeem7fer"]
+[gd_scene load_steps=5 format=3 uid="uid://wnhtxeem7fer"]
 
 [ext_resource type="Script" path="res://Scripts/banana_trash.gd" id="1_s3dke"]
 [ext_resource type="Texture2D" uid="uid://dfcfky3mypg6t" path="res://P.I.G/can-trash.png" id="2_jtxs1"]
+[ext_resource type="AudioStream" uid="uid://bp1f3mle7v7iw" path="res://SoundEffects/trash2.wav" id="3_48jpw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vkoil"]
 size = Vector2(72, 39)
@@ -18,3 +19,7 @@ texture = ExtResource("2_jtxs1")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(22, 22.5)
 shape = SubResource("RectangleShape2D_vkoil")
+
+[node name="HitCan" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_48jpw")
+volume_db = 10.0

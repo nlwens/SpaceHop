@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://btr7i0mid10dh" path="res://scene/bg_audio.tscn" id="7_qgm7s"]
 [ext_resource type="Script" path="res://Scripts/trash_group.gd" id="8_66evp"]
 [ext_resource type="Script" path="res://Scripts/ScoreLabel.gd" id="8_oegoc"]
-[ext_resource type="Texture2D" uid="uid://b5koofacibdqd" path="res://coin.png" id="8_rkja5"]
+[ext_resource type="Texture2D" uid="uid://b5koofacibdqd" path="res://P.I.G/coin1.png" id="8_rkja5"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jiot4"]
 load_path = "res://.godot/imported/background.jpg-b3e230b91105fdc212a16aa687ae4a4e.ctex"
