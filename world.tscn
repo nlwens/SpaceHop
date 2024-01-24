@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://xg605m843gih"]
+[gd_scene load_steps=19 format=3 uid="uid://xg605m843gih"]
 
 [ext_resource type="PackedScene" uid="uid://dxnhmxms0na4b" path="res://scene/player.tscn" id="1_78p7k"]
 [ext_resource type="Script" path="res://Scripts/StarsContainer.gd" id="4_i7dug"]
@@ -33,6 +33,7 @@ func _process(delta):
 	
 	if  player_y < get_position().y:
 		set_position(Vector2(0,player_y))
+		Global.highscore += 10
 	pass
 "
 
@@ -41,6 +42,23 @@ size = Vector2(901, 111)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rrwmj"]
 size = Vector2(109, 1389)
+
+[sub_resource type="LabelSettings" id="LabelSettings_uunow"]
+font_size = 32
+
+[sub_resource type="GDScript" id="GDScript_huy81"]
+script/source = "extends Label
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	self.text = str(Global.highscore)
+	pass
+"
 
 [sub_resource type="FontVariation" id="FontVariation_pme36"]
 
@@ -131,6 +149,15 @@ autostart = true
 [node name="AudioStreamPlayer" parent="." instance=ExtResource("7_qgm7s")]
 
 [node name="MoneyDisplay" type="CanvasLayer" parent="."]
+
+[node name="HighScoreLabel" type="Label" parent="MoneyDisplay"]
+offset_left = 54.0
+offset_top = 38.0
+offset_right = 94.0
+offset_bottom = 107.0
+text = "0"
+label_settings = SubResource("LabelSettings_uunow")
+script = SubResource("GDScript_huy81")
 
 [node name="ScoreLabel" type="Label" parent="MoneyDisplay"]
 texture_filter = 1

@@ -1,1 +1,8 @@
+res://world.tscn
+res://Scripts/global.gd
+res://Scripts/HighScoreLabel.gd
 res://main_menu.tscn
+res://scene/deadscene.tscn
+res://Scripts/high_score_deadscene_label.gd
+res://Scripts/highscore.gd
+res://Scripts/CanvasLayer.gd

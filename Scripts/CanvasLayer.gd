@@ -14,6 +14,7 @@ func _ready():
 func _on_button_play_pressed():
 	GameState.in_gameplay = true
 	get_tree().change_scene_to_file("res://world.tscn")
+	Global.highscore = 0
 
 
 # Function to handle the settings button press

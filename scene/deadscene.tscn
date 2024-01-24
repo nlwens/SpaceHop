@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://tdhgmeaf861o"]
+[gd_scene load_steps=13 format=3 uid="uid://tdhgmeaf861o"]
 
 [ext_resource type="Texture2D" uid="uid://chad0b35pilne" path="res://P.I.G/background.jpg" id="1_mef0t"]
 [ext_resource type="Script" path="res://shop/ExitButton.gd" id="2_44jej"]
 [ext_resource type="FontFile" uid="uid://b2hdbd13qdmqq" path="res://TherenRegular-2Oevd.otf" id="2_bfme7"]
+[ext_resource type="Script" path="res://Scripts/highscore.gd" id="3_75awh"]
 [ext_resource type="AudioStream" uid="uid://cxohlcimog4xn" path="res://SoundEffects/Fail.wav" id="3_abtr3"]
 [ext_resource type="Texture2D" uid="uid://vhgn7kxe7px" path="res://P.I.G/a.png" id="4_k75h2"]
 
@@ -24,6 +25,14 @@ font_size = 76
 font_color = Color(1, 0, 0, 1)
 shadow_size = 10
 shadow_color = Color(0, 0, 1, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_vw32c"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_e7clw"]
+font = SubResource("SystemFont_vw32c")
+font_size = 25
+shadow_size = 10
+shadow_color = Color(0.218307, 0.111084, 0.519351, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bhagr"]
 bg_color = Color(0.2, 0.337255, 0.52549, 0.709804)
@@ -68,13 +77,25 @@ theme_override_fonts/font = ExtResource("2_bfme7")
 text = "You are dead "
 label_settings = SubResource("LabelSettings_uf8i3")
 
+[node name="highscore" type="Label" parent="."]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 713.0
+offset_right = 649.0
+offset_bottom = 786.0
+text = "Your score is: 
+Your highest score is:"
+label_settings = SubResource("LabelSettings_e7clw")
+horizontal_alignment = 1
+script = ExtResource("3_75awh")
+
 [node name="Exit" type="Button" parent="."]
 texture_filter = 2
 layout_mode = 0
-offset_left = 224.0
-offset_top = 752.0
-offset_right = 505.0
-offset_bottom = 847.0
+offset_left = 230.0
+offset_top = 822.0
+offset_right = 511.0
+offset_bottom = 917.0
 theme_override_fonts/font = ExtResource("2_bfme7")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_bhagr")
