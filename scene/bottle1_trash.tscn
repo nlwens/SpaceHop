@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bxibrr7sxo4ip"]
+[gd_scene load_steps=5 format=3 uid="uid://bxibrr7sxo4ip"]
 
 [ext_resource type="Script" path="res://Scripts/banana_trash.gd" id="1_g4ipp"]
 [ext_resource type="Texture2D" uid="uid://cpvgx31x63hl8" path="res://P.I.G/bottle-trash.png" id="2_h7isr"]
+[ext_resource type="AudioStream" uid="uid://wwnsmx6mbthh" path="res://SoundEffects/trash3.wav" id="3_fcmv4"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nioo2"]
 radius = 14.0
@@ -19,3 +20,7 @@ texture = ExtResource("2_h7isr")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(25, 39)
 shape = SubResource("CapsuleShape2D_nioo2")
+
+[node name="HitBottle1" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_fcmv4")
+volume_db = 10.0

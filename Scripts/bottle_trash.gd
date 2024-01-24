@@ -8,7 +8,7 @@ var width : float
 
 func _ready():
 	set_process(true)
-	pass
+	
 
 func _process(delta):
 	width = get_viewport_rect().size.x
@@ -23,3 +23,4 @@ func _process(delta):
 
 func response():
 	emit_signal("delete_object",self)
+

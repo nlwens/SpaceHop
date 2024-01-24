@@ -1,6 +1,6 @@
 extends Node2D
 
-var bottle_trash_scene = preload("res://scene/Space_trash.tscn")
+var bottle_trash_scene = preload("res://scene/bottle_trash.tscn")
 var banana_trash_scene = preload("res://scene/banana_trash.tscn")
 var can_trash_scene = preload("res://scene/can_trash.tscn")
 var bottle1_trash_scene = preload("res://scene/bottle1_trash.tscn")

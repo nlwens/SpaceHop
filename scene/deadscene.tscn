@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://shop/ExitButton.gd" id="2_44jej"]
 [ext_resource type="FontFile" uid="uid://b2hdbd13qdmqq" path="res://TherenRegular-2Oevd.otf" id="2_bfme7"]
 [ext_resource type="AudioStream" uid="uid://cxohlcimog4xn" path="res://SoundEffects/Fail.wav" id="3_abtr3"]
-[ext_resource type="Texture2D" uid="uid://vhgn7kxe7px" path="res://a.png" id="4_k75h2"]
+[ext_resource type="Texture2D" uid="uid://vhgn7kxe7px" path="res://P.I.G/a.png" id="4_k75h2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u2moq"]
 bg_color = Color(0.294118, 0.352941, 0.682353, 0.588235)
