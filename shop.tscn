@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://dn7wx0cu1koxh"]
+[gd_scene load_steps=14 format=3 uid="uid://dn7wx0cu1koxh"]
 
 [ext_resource type="Texture2D" uid="uid://chad0b35pilne" path="res://P.I.G/background.jpg" id="1_60c3l"]
 [ext_resource type="Script" path="res://shop/shop.gd" id="1_qj0t0"]
 [ext_resource type="Script" path="res://shop/ExitButton.gd" id="2_swsxj"]
 [ext_resource type="Texture2D" uid="uid://cqvsm2j786xpm" path="res://P.I.G/s.1.PNG" id="3_0mp4f"]
 [ext_resource type="Texture2D" uid="uid://cy4552kjmen5" path="res://P.I.G/s.2.PNG" id="4_7yey5"]
+[ext_resource type="Texture2D" uid="uid://csr0upofyckrx" path="res://P.I.G/MainChar.png" id="6_x3h4d"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4p6cn"]
 bg_color = Color(0.294118, 0.352941, 0.682353, 0.588235)
@@ -79,25 +80,32 @@ texture = ExtResource("1_60c3l")
 [node name="BG" type="Panel" parent="."]
 layout_mode = 0
 offset_left = 138.0
-offset_top = 196.0
+offset_top = 128.0
 offset_right = 730.0
-offset_bottom = 1088.0
+offset_bottom = 1168.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_4p6cn")
 
 [node name="PurchaseBG1" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 234.0
-offset_top = 390.0
-offset_right = 650.0
-offset_bottom = 598.0
+offset_left = 233.0
+offset_top = 570.0
+offset_right = 649.0
+offset_bottom = 778.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_opam6")
 
 [node name="PurchaseBG2" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 239.0
-offset_top = 663.0
-offset_right = 655.0
-offset_bottom = 871.0
+offset_left = 232.0
+offset_top = 852.0
+offset_right = 648.0
+offset_bottom = 1060.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_opam6")
+
+[node name="PurchaseBG3" type="Panel" parent="."]
+offset_left = 236.0
+offset_top = 298.0
+offset_right = 652.0
+offset_bottom = 506.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_opam6")
 
 [node name="Exit" type="Button" parent="."]
@@ -116,45 +124,61 @@ icon_alignment = 1
 script = ExtResource("2_swsxj")
 
 [node name="NewChar1" type="Sprite2D" parent="."]
-position = Vector2(329, 493)
+position = Vector2(328, 673)
 scale = Vector2(0.334223, 0.317844)
 texture = ExtResource("3_0mp4f")
 
 [node name="NewChar2" type="Sprite2D" parent="."]
-position = Vector2(334, 771)
+position = Vector2(327, 960)
 scale = Vector2(0.329468, 0.315597)
 texture = ExtResource("4_7yey5")
 
+[node name="NewChar3" type="Sprite2D" parent="."]
+position = Vector2(328, 403)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("6_x3h4d")
+
 [node name="Cost1" type="Label" parent="."]
 layout_mode = 0
-offset_left = 425.0
-offset_top = 441.0
-offset_right = 609.0
-offset_bottom = 497.0
+offset_left = 424.0
+offset_top = 621.0
+offset_right = 608.0
+offset_bottom = 677.0
 theme_override_font_sizes/font_size = 30
-text = "Cost: 300"
+text = "Cost: 100"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="Cost2" type="Label" parent="."]
 layout_mode = 0
-offset_left = 425.0
-offset_top = 712.0
-offset_right = 609.0
-offset_bottom = 768.0
+offset_left = 418.0
+offset_top = 901.0
+offset_right = 602.0
+offset_bottom = 957.0
 theme_override_font_sizes/font_size = 30
-text = "Cost: 300"
+text = "Cost: 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Cost3" type="Label" parent="."]
+offset_left = 419.0
+offset_top = 345.0
+offset_right = 603.0
+offset_bottom = 401.0
+theme_override_font_sizes/font_size = 30
+text = "Cost: 100"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="Purchase1" type="Button" parent="."]
 layout_mode = 0
-offset_left = 435.0
-offset_top = 502.0
-offset_right = 611.0
-offset_bottom = 551.0
+offset_left = 420.0
+offset_top = 685.0
+offset_right = 596.0
+offset_bottom = 734.0
 theme_override_font_sizes/font_size = 27
 theme_override_styles/normal = SubResource("StyleBoxFlat_vydvl")
 text = "Purchase"
@@ -162,10 +186,20 @@ icon_alignment = 1
 
 [node name="Purchase2" type="Button" parent="."]
 layout_mode = 0
-offset_left = 430.0
-offset_top = 779.0
-offset_right = 606.0
-offset_bottom = 828.0
+offset_left = 423.0
+offset_top = 968.0
+offset_right = 599.0
+offset_bottom = 1017.0
+theme_override_font_sizes/font_size = 27
+theme_override_styles/normal = SubResource("StyleBoxFlat_vydvl")
+text = "Purchase"
+icon_alignment = 1
+
+[node name="Purchase3" type="Button" parent="."]
+offset_left = 422.0
+offset_top = 414.0
+offset_right = 598.0
+offset_bottom = 463.0
 theme_override_font_sizes/font_size = 27
 theme_override_styles/normal = SubResource("StyleBoxFlat_vydvl")
 text = "Purchase"
@@ -197,3 +231,4 @@ label_settings = SubResource("LabelSettings_issps")
 [connection signal="pressed" from="Exit" to="Exit" method="_on_pressed"]
 [connection signal="pressed" from="Purchase1" to="." method="_on_purchase_1_pressed"]
 [connection signal="pressed" from="Purchase2" to="." method="_on_purchase_2_pressed"]
+[connection signal="pressed" from="Purchase3" to="." method="_on_purchase_3_pressed"]

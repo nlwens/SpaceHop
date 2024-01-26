@@ -12,8 +12,8 @@ func _process(delta):
 	pass
 
 func _on_purchase_1_pressed():
-	if Global.score >= 300:
-		Global.score -= 300
+	if Global.score >= 100:
+		Global.score -= 100
 		Global.playernum = 1
 	
 	else:
@@ -25,8 +25,8 @@ func _on_purchase_1_pressed():
 
 
 func _on_purchase_2_pressed():
-	if Global.score >= 300:
-		Global.score -= 300
+	if Global.score >= 100:
+		Global.score -= 100
 		Global.playernum = 2
 	
 	else:
@@ -34,4 +34,16 @@ func _on_purchase_2_pressed():
 		await get_tree().create_timer(1).timeout
 		Failed.visible = false
 		
+	pass # Replace with function body.
+
+
+func _on_purchase_3_pressed():
+	if Global.score >= 100:
+		Global.score -= 100
+		Global.playernum = 0
+	
+	else:
+		Failed.visible = true
+		await get_tree().create_timer(1).timeout
+		Failed.visible = false
 	pass # Replace with function body.
