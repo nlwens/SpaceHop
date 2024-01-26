@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1706271324
+::res://::1706272213
 export_presets.cfg::TextFile::-1::1706101144::0::1::::<><>::
 GameState.gd::GDScript::-1::1705594919::0::1::::<>Node2D<>::
 icon.svg::CompressedTexture2D::952823857060801387::1705325607::1706101048::1::::<><>::
@@ -9,7 +9,7 @@ SignalManager.gd::GDScript::-1::1705594919::0::1::::<>Node2D<>::
 signal_manager.tscn::PackedScene::4797376803619640458::1705594919::0::1::::<><>::res://SignalManager.gd
 TherenRegular-2Oevd.otf::FontFile::4296154241999268984::1705933430::1705933430::1::::<><>::
 TherenRegular-vmrnE.ttf::FontFile::1875453077534076559::1705933430::1705933430::1::::<><>::
-world.tscn::PackedScene::1628658137599874047::1706271324::0::1::::<><>::uid://dxnhmxms0na4b::::res://scene/player.tscn<>res://Scripts/StarsContainer.gd<>uid://gyxkvptqdu2q::::res://scene/tile_group.tscn<>uid://870qupft0mqa::::res://scene/tile.tscn<>res://Scripts/tile_group.gd<>uid://cf1nfupcwuym::::res://scene/star.tscn<>uid://btr7i0mid10dh::::res://scene/bg_audio.tscn<>res://Scripts/trash_group.gd<>res://Scripts/ScoreLabel.gd<>uid://b5koofacibdqd::::res://P.I.G/coin1.png
+world.tscn::PackedScene::1628658137599874047::1706271350::0::1::::<><>::uid://dxnhmxms0na4b::::res://scene/player.tscn<>res://Scripts/StarsContainer.gd<>uid://gyxkvptqdu2q::::res://scene/tile_group.tscn<>uid://870qupft0mqa::::res://scene/tile.tscn<>res://Scripts/tile_group.gd<>uid://cf1nfupcwuym::::res://scene/star.tscn<>uid://btr7i0mid10dh::::res://scene/bg_audio.tscn<>res://Scripts/trash_group.gd<>res://Scripts/ScoreLabel.gd<>uid://b5koofacibdqd::::res://P.I.G/coin1.png
 ::res://MainChar/::1705509545
 main_char.gd::GDScript::-1::1705325607::0::1::::<>Node2D<>::
 main_char.tscn::PackedScene::8443256266823147346::1705359927::0::1::::<><>::res://MainChar/main_char.gd
