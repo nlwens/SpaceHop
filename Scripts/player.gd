@@ -7,9 +7,11 @@ var gravity = 7
 var isAlive = true
 var deadzone_y = -1
 @export_node_path("CollisionShape2D") var feet
+var camera
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	camera = get_node(camera_path)
 	set_process(true)
 
 
@@ -29,10 +31,13 @@ func _process(delta):
 		ySpeed += gravity
 		set_linear_velocity(Vector2(get_linear_velocity().x, ySpeed))
 
-		if position.y > get_viewport().size.y:
-			# Entered the dead zone (fallen down)
-			_on_deadzone_enter()
-
+		if get_position().x > camera.get_viewport_rect().size.x/2:
+			set_position(Vector2(-camera.get_viewport_rect().size.x/2,get_position().y))
+			pass
+			
+		if get_position().x < -camera.get_viewport_rect().size.x/2:
+			set_position(Vector2(camera.get_viewport_rect().size.x/2,get_position().y))
+			pass
 	pass
 
 func _on_deadzone_enter():

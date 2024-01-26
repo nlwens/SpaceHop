@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://xg605m843gih"]
+[gd_scene load_steps=18 format=3 uid="uid://xg605m843gih"]
 
 [ext_resource type="PackedScene" uid="uid://dxnhmxms0na4b" path="res://scene/player.tscn" id="1_78p7k"]
 [ext_resource type="Script" path="res://Scripts/StarsContainer.gd" id="4_i7dug"]
@@ -39,9 +39,6 @@ func _process(delta):
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2325e"]
 size = Vector2(901, 111)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rrwmj"]
-size = Vector2(109, 1389)
 
 [sub_resource type="LabelSettings" id="LabelSettings_uunow"]
 font_size = 32
@@ -107,22 +104,14 @@ player_path = NodePath("../player")
 position = Vector2(0, 46)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D"]
-position = Vector2(-20, 627)
+position = Vector2(-3, 622)
 shape = SubResource("RectangleShape2D_2325e")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Camera2D" groups=["deadzone"]]
 position = Vector2(0, 46)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D2"]
-position = Vector2(-477, -49)
-shape = SubResource("RectangleShape2D_rrwmj")
-
 [node name="StaticBody2D3" type="StaticBody2D" parent="Camera2D" groups=["deadzone"]]
 position = Vector2(834, 42)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/StaticBody2D3"]
-position = Vector2(-366, -69)
-shape = SubResource("RectangleShape2D_rrwmj")
 
 [node name="StarsContainer" type="Node2D" parent="."]
 texture_filter = 1

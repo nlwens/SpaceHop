@@ -8,3 +8,4 @@ res://scene/bottle1_trash.tscn
 res://scene/banana_trash.tscn
 res://scene/player.tscn
 res://Scripts/player.gd
+res://scene/tile_group.tscn
