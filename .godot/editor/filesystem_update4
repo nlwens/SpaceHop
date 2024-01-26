@@ -1,11 +1,4 @@
-res://main_menu.tscn
 res://world.tscn
+res://shop/shop.gd
+res://main_menu.tscn
 res://scene/deadscene.tscn
-res://scene/apple_trash.tscn
-res://scene/can_trash.tscn
-res://scene/bottle_trash.tscn
-res://scene/bottle1_trash.tscn
-res://scene/banana_trash.tscn
-res://scene/player.tscn
-res://Scripts/player.gd
-res://scene/tile_group.tscn
