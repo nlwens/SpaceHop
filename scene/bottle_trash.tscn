@@ -7,7 +7,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fn7cs"]
 size = Vector2(55, 58)
 
-[node name="SpaceTrash" type="StaticBody2D" groups=["deadzone"]]
+[node name="SpaceTrash" type="StaticBody2D" groups=["bottle_trash", "deadzone"]]
 texture_filter = 1
 position = Vector2(0, 1)
 script = ExtResource("1_7u1ks")

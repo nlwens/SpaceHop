@@ -7,7 +7,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vkoil"]
 size = Vector2(72, 39)
 
-[node name="StaticBody2D" type="StaticBody2D" groups=["deadzone"]]
+[node name="StaticBody2D" type="StaticBody2D" groups=["can_trash", "deadzone"]]
 script = ExtResource("1_s3dke")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

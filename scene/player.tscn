@@ -1,10 +1,15 @@
-[gd_scene load_steps=9 format=3 uid="uid://dxnhmxms0na4b"]
+[gd_scene load_steps=14 format=3 uid="uid://dxnhmxms0na4b"]
 
 [ext_resource type="Texture2D" uid="uid://c72n4p4pkf66a" path="res://P.I.G/pixil-frame-0.png" id="1_8k6jc"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_avpqq"]
 [ext_resource type="AudioStream" uid="uid://d2hmgdlggejkx" path="res://SoundEffects/Jump.wav" id="3_40s1n"]
 [ext_resource type="Script" path="res://scene/Sprite2D.gd" id="3_q3d6h"]
 [ext_resource type="AudioStream" uid="uid://cxohlcimog4xn" path="res://SoundEffects/Fail.wav" id="4_htmhy"]
+[ext_resource type="AudioStream" uid="uid://p4x2m2ysc4fx" path="res://SoundEffects/trash1.wav" id="4_nsje7"]
+[ext_resource type="AudioStream" uid="uid://c307ncsgpqfv8" path="res://SoundEffects/trash4.wav" id="6_q7b4k"]
+[ext_resource type="AudioStream" uid="uid://bp1f3mle7v7iw" path="res://SoundEffects/trash2.wav" id="7_xvakf"]
+[ext_resource type="AudioStream" uid="uid://bgi4ius2oxvvp" path="res://SoundEffects/trash5.wav" id="8_e64ra"]
+[ext_resource type="AudioStream" uid="uid://wwnsmx6mbthh" path="res://SoundEffects/trash3.wav" id="9_jqfbh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5fmms"]
 size = Vector2(87, 165)
@@ -48,6 +53,23 @@ stream = ExtResource("3_40s1n")
 
 [node name="Fail" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_htmhy")
+
+[node name="HitBanana" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_e64ra")
+volume_db = 10.0
+
+[node name="HitBottle1" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_jqfbh")
+volume_db = 10.0
+
+[node name="HitApple" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_q7b4k")
+
+[node name="HitCan" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_xvakf")
+
+[node name="HitBottle" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_nsje7")
 
 [connection signal="body_entered" from="Area2D2" to="." method="whole_body"]
 [connection signal="body_entered" from="Area2D" to="." method="collision"]

@@ -1,8 +1,10 @@
-res://world.tscn
-res://Scripts/global.gd
-res://Scripts/HighScoreLabel.gd
 res://main_menu.tscn
+res://world.tscn
 res://scene/deadscene.tscn
-res://Scripts/high_score_deadscene_label.gd
-res://Scripts/highscore.gd
-res://Scripts/CanvasLayer.gd
+res://scene/apple_trash.tscn
+res://scene/can_trash.tscn
+res://scene/bottle_trash.tscn
+res://scene/bottle1_trash.tscn
+res://scene/banana_trash.tscn
+res://scene/player.tscn
+res://Scripts/player.gd
