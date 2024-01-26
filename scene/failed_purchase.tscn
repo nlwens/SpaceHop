@@ -12,10 +12,9 @@ offset_bottom = 870.0
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 83.0
-offset_top = 160.0
-offset_right = 441.0
-offset_bottom = 297.0
-text = "You don't have 
-enough money!"
+offset_left = 43.0
+offset_top = 192.0
+offset_right = 488.0
+offset_bottom = 329.0
+text = "Outfit Purchased!"
 label_settings = SubResource("LabelSettings_80cx3")

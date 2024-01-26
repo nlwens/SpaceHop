@@ -1,6 +1,7 @@
 extends Control
 
 @onready var Failed = $Failed
+@onready var Success = $Success
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -15,6 +16,9 @@ func _on_purchase_1_pressed():
 	if Global.score >= 100:
 		Global.score -= 100
 		Global.playernum = 1
+		Success.visible = true
+		await get_tree().create_timer(1).timeout
+		Success.visible = false
 	
 	else:
 		Failed.visible = true
@@ -28,6 +32,9 @@ func _on_purchase_2_pressed():
 	if Global.score >= 100:
 		Global.score -= 100
 		Global.playernum = 2
+		Success.visible = true
+		await get_tree().create_timer(1).timeout
+		Success.visible = false
 	
 	else:
 		Failed.visible = true
@@ -41,6 +48,9 @@ func _on_purchase_3_pressed():
 	if Global.score >= 100:
 		Global.score -= 100
 		Global.playernum = 0
+		Success.visible = true
+		await get_tree().create_timer(1).timeout
+		Success.visible = false
 	
 	else:
 		Failed.visible = true
